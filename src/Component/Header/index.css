@@ -1,0 +1,112 @@
+.header_sticky{
+  background-color: rgb(0,134,173);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.main_headers{
+padding-top: 1%;
+font-family: var(--fontFamily);
+}
+.header_logo p {
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+.header_icon img {
+  width: 50%;
+  height: auto;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.logo_img{
+  width:6%;
+  height:13vh
+}
+.login_btn{
+  background-color: white!important;
+  color: rgb(0,134,173)!important;
+  margin-top: -3%!important;
+}
+.header_text_resp_one {
+  color: white;
+
+}
+
+@media (max-width: 560px) {
+  .header_icon {
+    padding-top: 6px;
+  }
+  #header_text_resp {
+    text-align: center;
+  }
+  #header_btn_resp {
+    display: block;
+    margin-left: 35%;
+  }
+  .header_text_resp_one {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .logo_img{
+
+    width: 25%;
+      height: 7vh;
+      margin-top: -30%;
+      margin-bottom: -30%;
+      margin-left: 1%;
+  }
+}
+
+@media (max-width:1050px) and (min-width:880px)
+{
+ .logo_img{
+width: 20%; 
+}
+.main_headers{
+  padding-top: 5%;
+}
+}
+@media (max-width:870px) and (min-width:555px)
+{
+ .logo_img{
+   width: 12%;
+   height: 7vh;
+   margin-left: 1%; 
+  margin-bottom: 1%;
+  }
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0);
+  border-color: rgb(39,54,122);
+}
+@media (max-width:550px){
+  
+.logo_img{
+  width:12%;
+  height:5vh;
+}
+.login_btn{
+  margin-top: 20% !important;
+  margin-bottom: 10% !important;
+}
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 200, 234, 23%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+/* #nav-main {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+} */

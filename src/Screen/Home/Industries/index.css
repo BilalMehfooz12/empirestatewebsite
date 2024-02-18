@@ -1,0 +1,54 @@
+.industries_main{
+    justify-content: center;
+    gap:100px;
+}
+
+.industries_img img{
+    width: 100%;
+    height: auto;
+}
+
+.industries_img1 img{
+    width: 100%;
+    height: auto;
+}
+
+.industries_img p{
+    color: rgb(222,190,22);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+.industries_img1 p{
+    color: rgb(222,190,22);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media (max-width:850px) and (min-width:500px)
+{
+    #estate_icon{
+        padding-top: -10%;
+    }
+}
+
+@media (max-width:499px)
+{
+    b, strong {
+        font-weight: bolder;
+        font-size: 13px;
+    }
+
+    .industries_img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .industries_img1 img{
+        width: 100%;
+        height: auto;
+        margin-top: -22%;
+    }
+    
+}

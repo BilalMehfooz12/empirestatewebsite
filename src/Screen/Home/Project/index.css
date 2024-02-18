@@ -1,0 +1,23 @@
+.project_main {
+  justify-content: center;
+  gap: 30px;
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  right: 2px;
+  background-color:rgba(0, 0, 0, 0.9);
+  color: white;
+  width: 100%;
+}

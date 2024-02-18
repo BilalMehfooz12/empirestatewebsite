@@ -1,0 +1,46 @@
+.main_contact{
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+.bg_contact{
+    background-image: url(../../../Image/contactbgImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+.conatact_image img{
+width: 100%;
+height: auto;
+}
+.contact_form{
+    border: 2px solid var(--color);
+padding: 2%;
+text-align: start;
+}
+.contact_form h4{
+    color: var(--color);
+    text-align: start;
+    
+}
+.contact_form label{
+    color: var(--color);
+    font-weight: 600;
+}
+.contact_form input{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+    padding-left: 1%;
+}
+.contact_form textarea{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+    padding-left: 1%;
+}
+.contact_form Button{
+    color: white;
+padding: 1.5% 5%;
+}
