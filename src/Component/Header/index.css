@@ -39,7 +39,11 @@ font-family: var(--fontFamily);
   margin-top: -3%!important;
 }
 .header_text_resp_one {
-  color: white;
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  
+  font-family: var(--fontFamily);
 
 }
 

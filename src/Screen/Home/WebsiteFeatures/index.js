@@ -6,9 +6,15 @@ import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import "./index.css";
 import { Button } from "@mui/material";
 import img2 from "../../../Image/services.png";
+import CouserOne from "../../../Image/courseOne.png";
+import CouserTwo from "../../../Image/courseTwo.png";
+import CouserThree from "../../../Image/courseThree.png";
+import CouserFour from "../../../Image/courseFour.png";
 import serviceOne from "../../../Image/service1.png";
 import serviceTwo from "../../../Image/service2.png";
 import serviceThree from "../../../Image/service3.png";
@@ -112,27 +118,275 @@ const WebsiteFeatures = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div>
-                <img src={img2} alt="Image 1" />
-                <img src={img2} alt="Image 2" />
+              <div className="slider_image">
+                <img src={CouserOne} alt="Image 1" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
+                <img src={CouserOne} alt="Image 2" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
-                <img src={img2} alt="Image 1" />
-                <img src={img2} alt="Image 2" />
+              <div className="slider_image">
+                <img src={CouserTwo} alt="Image 1" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
+                <img src={CouserTwo} alt="Image 2" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
-                <img src={img2} alt="Image 1" />
-                <img src={img2} alt="Image 2" />
+              <div className="slider_image">
+                <img src={CouserThree} alt="Image 1" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
+                <img src={CouserThree} alt="Image 2" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div>
-                <img src={img2} alt="Image 1" />
-                <img src={img2} alt="Image 2" />
+              <div className="slider_image">
+                <img src={CouserFour} alt="Image 1" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
+                <img src={CouserFour} alt="Image 2" />
+                <p>Tecnology</p>
+                <h5>Aplication Support</h5>
+                <Grid container className="slider_content_main">
+                  <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <AccessTimeIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={3}
+                    sm={3}
+                    xs={3}
+                    className="slider_content"
+                  >
+                    <label>2 Hour</label>
+                  </Grid>
+                  <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+                  <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <SignalCellularAltIcon />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={3}
+                    md={1}
+                    sm={1.5}
+                    xs={1.5}
+                    className="slider_content"
+                  >
+                    <label>Beginner</label>
+                  </Grid>
+                </Grid>
               </div>
             </SwiperSlide>
             <SwiperSlide>

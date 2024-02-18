@@ -1,5 +1,5 @@
 import "./App.css";
-import Router from "./Screen/Home/Router";
+import Router from "../src/Router";
 function App() {
   return (
     <div className="App">

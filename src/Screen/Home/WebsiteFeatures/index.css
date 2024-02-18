@@ -86,3 +86,41 @@
   .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next';
 }
+.slider_image{
+  text-align: start;
+  font-family: var(--fontFamily);
+}
+.slider_image p{
+  margin: -1% 0%;
+  font-size: 16px;
+}
+
+.slider_image h5{
+  color: black;
+}
+.slider_content_main{
+  background-color: var(--color);
+  margin: 2% 0%;
+  margin-bottom: 10%;
+  padding: 1%;
+  color: white;
+}
+.slider_content label
+{
+  font-size: 12px;
+  font-family: var(--fontFamily);
+}
+
+@media (max-width:1050px) and (min-width:560px){
+  .slider_image p{
+    margin: 0% 0%;
+    font-size: 16px;
+  }  
+}
+
+@media (max-width:550px){
+  .slider_image p{
+    margin: 0.5% 0%;
+    font-size: 16px;
+  }  
+}
