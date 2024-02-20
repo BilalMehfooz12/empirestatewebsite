@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import About_image from "../../Image/contactImage.jpg";
+import About_image from "../../Image/contact_image_2.jpg";
 import "./about.css";
 const AboutUs = () => {
   return (

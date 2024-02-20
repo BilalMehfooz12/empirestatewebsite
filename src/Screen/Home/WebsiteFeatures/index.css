@@ -1,7 +1,7 @@
 .website_feature_main{
     justify-content: center;
     gap: 30px;
-    margin-top: -10%;
+    margin-top: -7%;
 }
 .service_main{
       background-color: rgb(0,134,173);
@@ -67,6 +67,8 @@
     color: black;
     font: bolder;
   }
+  
+
 
   @media (max-width:550px){
     .website_feature_main{
@@ -101,7 +103,7 @@
 .slider_content_main{
   background-color: var(--color);
   margin: 2% 0%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   padding: 1%;
   color: white;
 }

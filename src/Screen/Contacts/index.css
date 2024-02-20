@@ -1,0 +1,40 @@
+.contact_second_main{
+    padding-top: 2%;
+}
+
+.border_contact{
+    border: 3px solid var(--color);
+    /* display: flex; */
+    /* justify-content: center; */
+padding: 2%;
+}
+.text_contact_second{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+    padding-left: 1%;
+    border-radius: 3px;
+    height: 20vh;
+    
+}
+.border_contact h4{
+    color: var(--color);
+    text-align: start;
+    font-family: var(--fontFamily);
+
+}
+.contact_second_form  p{
+    color: var(--color);
+    /* font-weight: 600; */
+    text-align: start !important;
+margin: 0%;
+padding: 0%;
+margin-bottom: -5%;
+}
+.contact_second_form  input{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+    padding-left: 1%;
+    border-radius: 3px;
+}

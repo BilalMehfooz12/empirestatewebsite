@@ -1,5 +1,6 @@
 .header_sticky{
   background-color: rgb(0,134,173);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -7,6 +8,8 @@
 .main_headers{
 padding-top: 1%;
 font-family: var(--fontFamily);
+display: flex;
+align-items: center;
 }
 .header_logo p {
   padding-top: 10px;
@@ -30,18 +33,18 @@ font-family: var(--fontFamily);
 }
 
 .logo_img{
-  width:6%;
-  height:13vh
+  width:100%;
+  height:auto
 }
 .login_btn{
   background-color: white!important;
   color: rgb(0,134,173)!important;
-  margin-top: -3%!important;
+  margin-top: -5%!important;
 }
 .header_text_resp_one {
-  color: white !important;
   font-weight: 600;
   text-decoration: none;
+  padding: 5% 10%;
   
   font-family: var(--fontFamily);
 
@@ -66,7 +69,7 @@ font-family: var(--fontFamily);
 
   .logo_img{
 
-    width: 25%;
+    width: 100%;
       height: 7vh;
       margin-top: -30%;
       margin-bottom: -30%;
@@ -95,12 +98,13 @@ width: 20%;
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0);
   border-color: rgb(39,54,122);
+  
 }
 @media (max-width:550px){
   
 .logo_img{
-  width:12%;
-  height:5vh;
+  width:90%;
+  height:10vh;
 }
 .login_btn{
   margin-top: 20% !important;

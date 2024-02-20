@@ -10,24 +10,25 @@ import "./index.css";
 const WebsitePrice = () => {
   return (
     <div className="webinar_bg">
-      <Grid
-        container
-        style={{ display: "flex", justifyContent: "center" }}
-        className="webinar_main"
-      >
-        <Grid item lg={8} className="webinar_text">
-          <h4>Webinars</h4>
-          <p>
-            {" "}
-            We have a variety of webinars lined up for you. Check them out here.
-          </p>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Grid container maxWidth="lg" className="webinar_main">
+          <Grid item lg={10} className="webinar_text">
+            <h4>Webinars</h4>
+            <p>
+              {" "}
+              We have a variety of webinars lined up for you. Check them out
+              here.
+            </p>
+          </Grid>
+          <Grid item lg={2}>
+            <Button
+              style={{ backgroundColor: "white", color: "rgb(0,134,174)" }}
+            >
+              View All
+            </Button>
+          </Grid>
         </Grid>
-        <Grid item lg={2}>
-          <Button style={{ backgroundColor: "white", color: "rgb(0,134,174)" }}>
-            View All
-          </Button>
-        </Grid>
-      </Grid>
+      </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg" className="website_price_main">
           {/* <Grid item lg={0}></Grid> */}
