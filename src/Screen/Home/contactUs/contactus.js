@@ -13,7 +13,7 @@ const ContactUs = () => {
           </Grid>
           <Grid item lg={5} md={12} sm={12} xs={12} className="contact_form">
             <form
-              action="https://formsubmit.co/bilalmehfooz253@gmail.com"
+              action="https://formsubmit.co/ empirestatetecksolutions@gmail.com"
               onsubmit="myFunction()"
               method="POST"
               class=" p-4 p-md-5 contact-form"
@@ -53,16 +53,6 @@ const ContactUs = () => {
                 Submit
               </button>
             </form>
-          </Grid>
-        </Grid>
-      </Container>
-      <Container>
-        <Grid container className="what_app_main">
-          <Grid item lg={2}>
-            <Button className="what_app_btn">Request a call back</Button>
-          </Grid>
-          <Grid item lg={0.6} className="what_app_icon_main">
-            <PhoneEnabledIcon className="what_app_icon" />
           </Grid>
         </Grid>
       </Container>

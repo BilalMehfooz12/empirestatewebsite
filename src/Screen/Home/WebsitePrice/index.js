@@ -12,7 +12,7 @@ const WebsitePrice = () => {
     <div className="webinar_bg">
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg" className="webinar_main">
-          <Grid item lg={10} className="webinar_text">
+          <Grid item lg={11} className="webinar_text">
             <h4>Webinars</h4>
             <p>
               {" "}
@@ -20,7 +20,7 @@ const WebsitePrice = () => {
               here.
             </p>
           </Grid>
-          <Grid item lg={2}>
+          <Grid item lg={1}>
             <Button
               style={{ backgroundColor: "white", color: "rgb(0,134,174)" }}
             >
@@ -30,11 +30,16 @@ const WebsitePrice = () => {
         </Grid>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Grid container maxWidth="lg" className="website_price_main">
+        <Grid
+          container
+          maxWidth="lg"
+          columnSpacing={1}
+          className="website_price_main"
+        >
           {/* <Grid item lg={0}></Grid> */}
           <Grid
             item
-            lg={2.5}
+            lg={3}
             md={3.5}
             sm={5.5}
             xs={11}
@@ -45,7 +50,7 @@ const WebsitePrice = () => {
           </Grid>
           <Grid
             item
-            lg={2.5}
+            lg={3}
             md={3.5}
             sm={5.5}
             xs={11}
@@ -57,7 +62,7 @@ const WebsitePrice = () => {
 
           <Grid
             item
-            lg={2.5}
+            lg={3}
             md={3.5}
             sm={5.5}
             xs={11}
@@ -68,7 +73,7 @@ const WebsitePrice = () => {
           </Grid>
           <Grid
             item
-            lg={2.5}
+            lg={3}
             md={3.5}
             sm={5.5}
             xs={11}

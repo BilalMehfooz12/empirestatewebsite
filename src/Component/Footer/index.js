@@ -22,7 +22,7 @@ const Footer = () => {
       <Container>
         <Grid container className="footer_main" gap={5}>
           <Grid item lg={3} md={3} sm={5} xs={12} className="footer_logo">
-            <img src={logo} />
+            {/* <img src={logo} /> */}
             <br></br>
             <h5>Empire State Teck Solution</h5>
             <p>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <EmailIcon />
               </Grid>
               <Grid item lg={10} xs={9}>
-                <p>empirestatetecksolution@gmail.com</p>
+                <p>empirestatetecksolutions@gmail.com</p>
               </Grid>
             </Grid>
             <Grid container>

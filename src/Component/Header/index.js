@@ -13,7 +13,7 @@ import "./index.css";
 const Header = () => {
   const location = useLocation();
   return (
-    <div className="header_sticky">
+    <div className="header_sticky" style={{ height: "17vh" }}>
       <div class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           {/* <img src={logo} className="logo_img" /> */}
@@ -69,7 +69,7 @@ const Header = () => {
                           color: "white",
                         }}
                       >
-                        <b> empirestatetecksolution@gmail.com</b>
+                        <b> empirestatetecksolutions@gmail.com</b>
                       </p>
                     </Grid>
                   </Grid>

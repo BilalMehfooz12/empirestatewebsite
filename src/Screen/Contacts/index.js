@@ -7,8 +7,16 @@ import "./index.css";
 const Contacts = () => {
   return (
     <div>
-      <Container className="contact_second_main">
-        <Grid container>
+      <Container
+        className="contact_second_main"
+        style={{
+          height: "48vh",
+          // display: "flex",
+          // alignContent: "center",
+          // width: "100%",
+        }}
+      >
+        {/* <Grid container>
           <Grid item lg={2}>
             <Grid container>
               <Grid item xl={1} lg={2} md={2.5}>
@@ -38,12 +46,12 @@ const Contacts = () => {
                     color: "rgb(0,134,173) ",
                   }}
                 >
-                  <b> empirestatetecksolution@gmail.com</b>
+                  <b> empirestatetecksolutions@gmail.com</b>
                 </p>
               </Grid>
             </Grid>
           </Grid>{" "}
-        </Grid>
+        </Grid> */}
         <div className="border_contact">
           <h4>Drop Your Message Here</h4>
           <Grid container className="contact_second_form" spacing={3}>

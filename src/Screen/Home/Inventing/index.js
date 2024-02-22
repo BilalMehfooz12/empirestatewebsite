@@ -14,14 +14,12 @@ const Inventing = () => {
           <Grid item lg={7} md={7} sm={7.5} xs={12} className="we_zax_heading">
             <h4>EMPIRE STATE TECH SOLUTION (ESTS)</h4>
             <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy
+              ESTS Tech Academy is a US-Based Startup empowering IT
+              Professionals for a Better Future. ESTS aims to help the students
+              succeed by providing innovative learning programs,
+              apprenticeships, and career coaching that cater to the industry's
+              most in-demand diverse roles with personalized academic rigor,
+              coaching and great flexibility.
             </p>
             {/* <Button  style={{textAlign:'start',display:'block',backgroundColor:'rgb(0,163,255)',color:'white',marginBottom:'20px'}} >Request A Quote</Button> */}
           </Grid>

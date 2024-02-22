@@ -3,21 +3,20 @@ import Container from "@mui/material/Container";
 import About_image from "../../Image/contact_image_2.jpg";
 import "./about.css";
 const AboutUs = () => {
+
   return (
-    <div>
+    <div className="about_main_height">
       <Container>
         <Grid container gap={5} className="about_main">
           <Grid item lg={5.5} md={5.5} sm={12} className="about_text">
             <h4>EMPIRE STATE TECH SOLUTION (ESTS)</h4>
             <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy
+              ESTS Tech Academy is a US-Based Startup empowering IT
+              Professionals for a Better Future. ESTS aims to help the students
+              succeed by providing innovative learning programs,
+              apprenticeships, and career coaching that cater to the industry's
+              most in-demand diverse roles with personalized academic rigor,
+              coaching and great flexibility.
             </p>
           </Grid>
           <Grid item lg={5.5} md={5.5} sm={12} className="about_image">

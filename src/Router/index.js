@@ -6,6 +6,7 @@ import AboutUs from "../Screen/AboutUs/aboutUs";
 import Course from "../Screen/Courses/courser";
 import ScrollToTop from "../Component/ScrollTop/scrollTop";
 import Contact from "../Screen/Contacts";
+import RequestCall from "../Screen/RequestCall/request";
 function Router() {
   return (
     <div>
@@ -17,6 +18,7 @@ function Router() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/courses" element={<Course />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/requestCall" element={<RequestCall />} />
         </Routes>
         <Footer />
       </BrowserRouter>

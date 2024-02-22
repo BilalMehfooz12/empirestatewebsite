@@ -22,8 +22,12 @@ import serviceThree from "../../../Image/service3.png";
 const WebsiteFeatures = () => {
   return (
     <div>
-      <div className="service_main" id="services">
-        <Grid container maxWidth="md" className="website_feature_main">
+      <div
+        className="service_main"
+        id="services"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid container maxWidth="lg" className="website_feature_main">
           <Grid
             item
             lg={3.5}
@@ -73,7 +77,7 @@ const WebsiteFeatures = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg" className="course_main">
-          <Grid item lg={10}>
+          <Grid item lg={11}>
             <h3>Courses</h3>
             <p>
               {" "}
@@ -81,7 +85,7 @@ const WebsiteFeatures = () => {
               website will adjust to presence.
             </p>
           </Grid>
-          <Grid item lg={2}>
+          <Grid item lg={1}>
             <Button
               style={{ backgroundColor: "rgb(0,134,174)", color: "white" }}
             >

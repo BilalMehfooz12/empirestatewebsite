@@ -1,5 +1,5 @@
 .courses_main{
-    padding-top: 3%;
+    /* padding-top: 1%; */
 }
 .courses_main h1{
     color: var(--color);
@@ -12,6 +12,11 @@
 .course_image img{
 width: 100%;
 height: auto;
+}
+.search_course{
+  padding-left: 4%;
+  outline: none;
+  border: 2px solid var(--color);
 }
 
 .course_image{
