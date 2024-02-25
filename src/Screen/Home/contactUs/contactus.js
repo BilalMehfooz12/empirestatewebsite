@@ -2,8 +2,17 @@ import Grid from "@mui/material/Grid";
 import { Button, Container } from "@mui/material";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 import contactImage from "../../../Image/contact_image_2.jpg";
+import Footer from "../../../Component/Footer";
+import { toast } from "react-toastify";
+
 import "./contact.css";
 const ContactUs = () => {
+  const handleSubmit = async (event) => {
+    window.location.href = "/requestCall";
+    toast.success("Our Team Contact You As Soon As Possible Thank You!", {
+      position: "top-center",
+    });
+  };
   return (
     <div className="bg_contact">
       <Container>
@@ -13,8 +22,8 @@ const ContactUs = () => {
           </Grid>
           <Grid item lg={5} md={12} sm={12} xs={12} className="contact_form">
             <form
-              action="https://formsubmit.co/ empirestatetecksolutions@gmail.com"
-              onsubmit="myFunction()"
+              action="https://formsubmit.co/bilalmehfooz253@gmail.com"
+              onSubmit={handleSubmit}
               method="POST"
               class=" p-4 p-md-5 contact-form"
             >
@@ -25,7 +34,7 @@ const ContactUs = () => {
                 href="#footer"
                 value="http://localhost:3000"
               />
-              <h4>Drop Your Message Here</h4>
+              <h4>Dropsdas Your Message Here</h4>
               <label>Name</label>
               <br></br>
               <input type="name" name="Name" required autoComplete="off" />
@@ -56,6 +65,7 @@ const ContactUs = () => {
           </Grid>
         </Grid>
       </Container>
+      <Footer />
     </div>
   );
 };

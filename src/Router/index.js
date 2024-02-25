@@ -7,6 +7,7 @@ import Course from "../Screen/Courses/courser";
 import ScrollToTop from "../Component/ScrollTop/scrollTop";
 import Contact from "../Screen/Contacts";
 import RequestCall from "../Screen/RequestCall/request";
+import SignUp from "../Screen/SignUp/signup";
 function Router() {
   return (
     <div>
@@ -19,8 +20,9 @@ function Router() {
           <Route path="/courses" element={<Course />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/requestCall" element={<RequestCall />} />
+          <Route path="/signUp" element={<SignUp />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

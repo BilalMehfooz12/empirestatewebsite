@@ -6,6 +6,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import EmailIcon from "@mui/icons-material/Email";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import letter from "../../Image/icon/letter.png";
@@ -17,6 +18,7 @@ import logo from "../../Image/Empirelogo.png";
 import "./index.css";
 
 const Footer = () => {
+  const naviagte = useNavigate();
   return (
     <div className="footer_bg_color">
       <Container>
@@ -40,9 +42,9 @@ const Footer = () => {
           <Grid item lg={2.5} md={3} sm={5} xs={12} className="footer_services">
             <h2>Important Link</h2>
             <p>Home</p>
-            <p>About</p>
-            <p>Courses</p>
-            <p>Contact Us</p>
+            <p onClick={() => naviagte("/aboutus")}>About</p>
+            <p onClick={() => naviagte("/courses")}>Courses</p>
+            <p onClick={() => naviagte("/contact")}>Contact Us</p>
           </Grid>
           <Grid item lg={2.5} md={3} sm={5} xs={12} className="footer_services">
             <h2>Contact Us</h2>

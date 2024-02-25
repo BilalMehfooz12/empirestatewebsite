@@ -6,6 +6,8 @@ import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import Typography from "@mui/material/Typography";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import { InputAdornment, TextField } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 import CouserOne from "../../Image/courseOne.png";
 import CouserTwo from "../../Image/courseTwo.png";
 import CouserThree from "../../Image/courseThree.png";
@@ -77,6 +79,33 @@ const Courses = () => {
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
+    {
+      image: CouserTwo,
+      tecknology: "Tecnology",
+      application: "Aplication Support",
+      icon: <AccessTimeIcon />,
+      hour: "2 Hour",
+      iconLevel: <SignalCellularAltIcon />,
+      level: "Beginner",
+    },
+    {
+      image: CouserTwo,
+      tecknology: "React",
+      application: "Aplication Support",
+      icon: <AccessTimeIcon />,
+      hour: "2 Hour",
+      iconLevel: <SignalCellularAltIcon />,
+      level: "Beginner",
+    },
+    {
+      image: CouserThree,
+      tecknology: "Devops",
+      application: "Aplication Support",
+      icon: <AccessTimeIcon />,
+      hour: "2 Hour",
+      iconLevel: <SignalCellularAltIcon />,
+      level: "Beginner",
+    },
   ];
   const [inpputSearch, setInputSearch] = useState("");
   const [page, setPage] = React.useState(1);
@@ -98,9 +127,9 @@ const Courses = () => {
       return item;
     }
   });
-  const lastIndex = page * rowsPerPage;
-  const firstIndex = lastIndex - rowsPerPage;
-  const result = filterData.slice(firstIndex, lastIndex);
+  // const lastIndex = page * rowsPerPage;
+  // const firstIndex = lastIndex - rowsPerPage;
+  // const result = filterData.slice(firstIndex, lastIndex);
   return (
     <div className="courses_main" style={{ height: "48vh" }}>
       <div style={{ height: "47vh" }}>
@@ -109,7 +138,7 @@ const Courses = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            paddingTopop: "3%",
+            paddingTop: "2%",
           }}
         >
           <br></br>
@@ -117,14 +146,21 @@ const Courses = () => {
           <Grid item lg={5.5}>
             <h1>Courses</h1>
           </Grid>
-          <Grid item lg={1}>
+          <Grid item lg={1.3}>
             <br></br>
-            <input
+            <TextField
               placeholder="Search Courses"
               type="text"
               value={inpputSearch}
               onChange={handleChangeSearch}
               className="search_course"
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
           </Grid>
         </Grid>
@@ -132,7 +168,7 @@ const Courses = () => {
 
         <Container>
           <Grid container spacing={3} className="courses_images">
-            {result.map((item) => {
+            {filterData.map((item) => {
               return (
                 <Grid
                   item
@@ -182,7 +218,7 @@ const Courses = () => {
           </Grid>
         </Container>
       </div>
-      <div style={{ height: "1vh" }}>
+      {/* <div style={{ height: "1vh" }}>
         <Container>
           <Grid
             container
@@ -199,7 +235,7 @@ const Courses = () => {
             </Grid>
           </Grid>
         </Container>
-      </div>
+      </div> */}
     </div>
   );
 };

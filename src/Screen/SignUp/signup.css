@@ -1,0 +1,38 @@
+.signup_main{
+    display: flex;
+    justify-content: center;
+}
+.signup_text{
+    border:  3px solid var(--color);
+    margin-top: 2%;
+}
+.register_input{
+    padding: 4%;
+}
+.register_input h4{
+color: var(--color);
+font-family: var(--fontfamily);
+text-align: center !important;
+padding-top: 3%;
+}
+
+.register_input  p{
+    color: var(--color);
+    /* font-weight: 600; */
+    text-align: start !important;
+margin: 0%;
+padding: 0%;
+margin-bottom: -4%;
+}
+.register_input  input{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+    padding-left: 1%;
+    border-radius: 3px;
+}
+.register_input  textarea{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+}

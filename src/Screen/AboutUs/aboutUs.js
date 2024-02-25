@@ -1,9 +1,9 @@
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import About_image from "../../Image/contact_image_2.jpg";
+import Footer from "../../Component/Footer";
 import "./about.css";
 const AboutUs = () => {
-
   return (
     <div className="about_main_height">
       <Container>
@@ -20,10 +20,11 @@ const AboutUs = () => {
             </p>
           </Grid>
           <Grid item lg={5.5} md={5.5} sm={12} className="about_image">
-            <img src={About_image} />
+            <img src="https://nmcdn.io/e186d21f8c7946a19faed23c3da2f0da/556712d9bf0f4cb2a916cc810687d52b/files/blogimages/October/Client-handshake.jpg" />
           </Grid>
         </Grid>
       </Container>
+      <Footer />
     </div>
   );
 };

@@ -7,7 +7,9 @@
   box-shadow: 1px -8px 7px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 1px -8px 7px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px -8px 7px 0px rgba(0,0,0,0.75);
-  height: 30vh;
+  height: 30.5vh;
+  display: flex;
+  align-items: center;
 }
 .footer_main{
   display: flex;
@@ -22,6 +24,7 @@
   color: white  ;
   text-align:start !important;
   font-family: var(--fontFamily);
+  cursor: pointer;
 }
 .footer_services h2{
   margin-bottom: 5%;

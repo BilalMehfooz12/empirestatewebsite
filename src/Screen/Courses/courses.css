@@ -6,15 +6,46 @@
     font-family: var(--fontFamily);
 }
 .courses_images{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    /* style={{ height: "70vh", overflowY: "scroll", marginTop: "5%" }} */
+height: 58vh;
+overflow-y: scroll;
+margin-top: 2% !important;
+
+  }
+
+  /* For WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
 }
+
+/* For WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar-thumb {
+  background: rgb(4, 38, 48);
+  border-radius: 4px;
+  /* Color of the scrollbar thumb */
+}
+
+/* For Firefox */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+/* For Firefox */
+::-moz-scrollbar-thumb {
+  background:var(--color);
+}
+
+
+
 .course_image img{
 width: 100%;
 height: auto;
 }
 .search_course{
   padding-left: 4%;
+  margin-top: -10% !important;
   outline: none;
   border: 2px solid var(--color);
 }

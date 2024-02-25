@@ -6,10 +6,8 @@
   z-index: 999;
 }
 .main_headers{
-padding-top: 1%;
 font-family: var(--fontFamily);
-display: flex;
-align-items: center;
+
 }
 .header_logo p {
   padding-top: 10px;
@@ -36,15 +34,25 @@ align-items: center;
   width:100%;
   height:auto
 }
-.login_btn{
-  background-color: white!important;
-  color: rgb(0,134,173)!important;
-  margin-top: -5%!important;
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the height of the parent container is set */
+  margin: 0; /* Remove default margin */
 }
+.login_btn{
+  background-color: rgb(0,134,173)!important;
+  color: white!important;
+margin-top: 10% !important;
+margin-left: 15% !important;
+}
+
 .header_text_resp_one {
   font-weight: 600;
   text-decoration: none;
-  padding: 5% 10%;
+
+  /* padding: 5% 10%; */
   
   font-family: var(--fontFamily);
 
@@ -110,6 +118,11 @@ width: 20%;
   margin-top: 20% !important;
   margin-bottom: 10% !important;
 }
+}
+.header_child_bg{
+  background-color: white;
+  border-radius: 5px;
+margin-top:1.5%;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 200, 234, 23%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);

@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 import { Button } from "@mui/material";
 import img2 from "../../../Image/services.png";
@@ -20,6 +21,7 @@ import serviceTwo from "../../../Image/service2.png";
 import serviceThree from "../../../Image/service3.png";
 
 const WebsiteFeatures = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div
@@ -88,6 +90,7 @@ const WebsiteFeatures = () => {
           <Grid item lg={1}>
             <Button
               style={{ backgroundColor: "rgb(0,134,174)", color: "white" }}
+              onClick={() => navigate("/courses")}
             >
               View All
             </Button>

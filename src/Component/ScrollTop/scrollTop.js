@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./ScrollToTop.css"; // Assuming you have a separate CSS file for styling
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 import { useNavigate } from "react-router-dom";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [reuestisVisible, setreuestIsVisible] = useState(false);
+
   const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
@@ -15,21 +16,39 @@ const ScrollToTop = () => {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 1500) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
   };
 
+  const handleScrollRequest = () => {
+    if (window.scrollY > 10) {
+      setreuestIsVisible(true);
+    } else {
+      setreuestIsVisible(false);
+    }
+  };
+
   window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", handleScrollRequest);
 
   return (
     <div className="scroll-to-top">
-      {isVisible && (
-        <div className="scroll-icon">
-          {/* <i className="fas fa-chevron-up"></i> */}
-          <KeyboardArrowUpIcon className="srcoll_icon" onClick={scrollToTop} />
+      <div className="scroll-icon">
+        {isVisible && (
+          <div>
+            {/* <i className="fas fa-chevron-up"></i> */}
+            <KeyboardArrowUpIcon
+              className="srcoll_icon"
+              onClick={scrollToTop}
+            />
+          </div>
+        )}
+        {reuestisVisible && (
+          // <div className="scroll-icon">
+
           <div
             style={{
               display: "flex",
@@ -53,8 +72,9 @@ const ScrollToTop = () => {
               <PhoneEnabledIcon className="what_app_icon" />
             </div>
           </div>
-        </div>
-      )}
+          // </div>
+        )}
+      </div>
     </div>
   );
 };
