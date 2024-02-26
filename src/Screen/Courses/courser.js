@@ -132,7 +132,7 @@ const Courses = () => {
   // const result = filterData.slice(firstIndex, lastIndex);
   return (
     <div className="courses_main" style={{ height: "48vh" }}>
-      <div style={{ height: "47vh" }}>
+      <div>
         <Grid
           container
           style={{
@@ -143,7 +143,7 @@ const Courses = () => {
         >
           <br></br>
           <br></br>
-          <Grid item lg={5.5}>
+          <Grid item lg={5.5} xs={12}>
             <h1>Courses</h1>
           </Grid>
           <Grid item lg={1.3}>

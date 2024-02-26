@@ -16,14 +16,7 @@ const Contacts = () => {
   return (
     <div>
       <Container className="contact_second_main">
-        <div
-          className="border_contact"
-          style={{
-            height: "43.5vh",
-            display: "flex",
-            alignContent: "center",
-          }}
-        >
+        <div className="border_contact">
           <form
             action="https://formsubmit.co/bilalmehfooz253@gmail.com"
             onSubmit={handleSubmit}
@@ -38,25 +31,25 @@ const Contacts = () => {
               value="http://localhost:3000"
             />
             <Grid container className="contact_second_form" spacing={3}>
-              <Grid item lg={12}>
+              <Grid item lg={12} md={12} sm={12} xs={12}>
                 <h5 className="message_contact">Drop Your Message Here</h5>
               </Grid>
-              <Grid item lg={4}>
+              <Grid item lg={4} md={4} sm={4} xs={12}>
                 <p>Name</p>
                 <br></br>
                 <input type="name" name="Name" required autoComplete="off" />
               </Grid>
-              <Grid item lg={4}>
+              <Grid item lg={4} md={4} sm={4} xs={12}>
                 <p>Contact No</p>
                 <br></br>
                 <input type="text" name="Number" required autoComplete="off" />
               </Grid>
-              <Grid item lg={4}>
+              <Grid item lg={4} md={4} sm={4} xs={12}>
                 <p>Email</p>
                 <br></br>
                 <input type="email" name="Email" required autoComplete="off" />
               </Grid>
-              <Grid item lg={8}>
+              <Grid item lg={8} md={8} sm={8} xs={12}>
                 <p>Message</p>
                 <br></br>
                 <br></br>
@@ -68,7 +61,7 @@ const Contacts = () => {
                   autoComplete="off"
                 />
               </Grid>
-              <Grid item lg={1}>
+              <Grid item lg={1} md={1} sm={1} xs={12}>
                 <br></br>
                 <button
                   style={{

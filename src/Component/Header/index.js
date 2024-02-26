@@ -34,7 +34,7 @@ const Header = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <Container className="header_child_bg">
               <Grid container className="main_headers" gap={2}>
-                <Grid item lg={2} sm={0.2}>
+                <Grid item lg={2} md={2} sm={2} xs={12}>
                   <img src={logo} className="logo_img" />
                 </Grid>
                 {/* 
@@ -80,8 +80,8 @@ const Header = () => {
                 <Grid
                   item
                   lg={1}
-                  md={2}
-                  sm={1.2}
+                  md={1}
+                  sm={1}
                   xs={12}
                   style={{
                     backgroundColor:
@@ -107,8 +107,8 @@ const Header = () => {
                 <Grid
                   item
                   lg={1}
-                  md={2}
-                  sm={1.8}
+                  md={1}
+                  sm={1}
                   xs={12}
                   style={{
                     backgroundColor:
@@ -136,8 +136,8 @@ const Header = () => {
                 <Grid
                   item
                   lg={1}
-                  md={2}
-                  sm={1.4}
+                  md={1}
+                  sm={1}
                   xs={12}
                   style={{
                     backgroundColor:
@@ -166,8 +166,8 @@ const Header = () => {
                 <Grid
                   item
                   lg={1.2}
-                  md={2}
-                  sm={2}
+                  md={1.2}
+                  sm={1.5}
                   xs={12}
                   style={{
                     backgroundColor:
@@ -192,37 +192,38 @@ const Header = () => {
                     </Link>
                   </p>
                 </Grid>
-                <Grid item lg={3} md={3} sm={3} xs={12}>
-                  <Grid container>
-                    <Grid item xl={1} lg={2} md={2.5}>
+                <Grid item lg={3.2} md={4} sm={5.5} xs={12}>
+                  <Grid
+                    container
+                    style={{ display: "flex", alignItems: "center" }}
+                    spacing={2}
+                  >
+                    <Grid item xl={2} lg={2} md={2} sm={2} xs={2}>
                       <CallIcon style={{ color: "rgb(0,134,173)" }} />
                       <br></br>
                       <EmailIcon style={{ color: "rgb(0,134,173)" }} />
                     </Grid>
-                    <Grid item xl={10} lg={10} className="centered-text">
-                      <p
-                        style={{
-                          width: "100%",
-                          color: "rgb(0,134,173)",
-                          font: "bolder ",
-                          textAlign: "start",
-                        }}
-                      >
-                        <b>
-                          +1(347)593-5383<br></br>{" "}
-                          empirestatetecksolutions@gmail.com
-                        </b>
-                      </p>
+                    <Grid
+                      item
+                      xl={10}
+                      lg={10}
+                      md={10}
+                      sm={10}
+                      xs={10}
+                      className="centered-text"
+                    >
+                      +1(347)593-5383<br></br>{" "}
+                      empirestatetecksolutions@gmail.com
                     </Grid>
                   </Grid>
                 </Grid>
 
-                <Grid item xl={1} lg={1.5} md={2.5} sm={3}>
+                <Grid item xl={1.6} lg={1.6} md={2} sm={3} xs={12}>
                   <Button
                     className="login_btn"
                     onClick={() => navigate("/signUp")}
                   >
-                    Sign Up
+                    Register Now
                   </Button>
                 </Grid>
               </Grid>

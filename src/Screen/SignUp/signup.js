@@ -6,10 +6,13 @@ import { Button } from "@mui/material";
 const SignUp = () => {
   return (
     <div>
-      <Container className="signup_main">
+      <Container
+        className="signup_main"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <Grid container maxWidth="sm" className="signup_text">
-          <Grid item lg={12} className="register_input">
-            <h4>Sign Up Here</h4>
+          <Grid item lg={12} md={12} sm={12} xs={12} className="register_input">
+            <h4>Register Now</h4>
             <p>Name</p>
             <br></br>
             <input type="name" name="Name" required autoComplete="off" />
@@ -42,7 +45,7 @@ const SignUp = () => {
             <Button
               style={{ backgroundColor: "rgb(0,134,173)", color: "white" }}
             >
-              Sign Up
+              Register Now
             </Button>
           </Grid>
         </Grid>

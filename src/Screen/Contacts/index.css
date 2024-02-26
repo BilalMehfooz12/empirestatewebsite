@@ -4,9 +4,10 @@
 
 .border_contact{
     border: 3px solid var(--color);
-    /* display: flex; */
-    /* justify-content: center; */
-padding: 2%;
+  padding: 2%;
+  height: 43.5vh;
+  display: flex;
+  justify-content: center;
 }
 .message_contact{
     color: var(--color);
@@ -46,4 +47,11 @@ margin-bottom: -5%;
     outline: none;
     padding-left: 1%;
     border-radius: 3px;
+}
+
+@media (max-width:1000px){
+
+.border_contact{
+    height: auto;
+}
 }

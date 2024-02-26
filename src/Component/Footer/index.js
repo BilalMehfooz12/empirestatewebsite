@@ -23,11 +23,10 @@ const Footer = () => {
     <div className="footer_bg_color">
       <Container>
         <Grid container className="footer_main" gap={5}>
-          <Grid item lg={3} md={3} sm={5} xs={12} className="footer_logo">
+          <Grid item lg={3} md={3} sm={5} xs={12} className="footer_services">
             {/* <img src={logo} /> */}
-            <br></br>
-            <h5>Empire State Teck Solution</h5>
-            <p>
+            <h4>Empire State Teck Solution</h4>
+            <p style={{ marginTop: "6%" }}>
               typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text ever since the 1500s
             </p>
