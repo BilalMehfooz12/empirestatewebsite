@@ -8,6 +8,7 @@ import ScrollToTop from "../Component/ScrollTop/scrollTop";
 import Contact from "../Screen/Contacts";
 import RequestCall from "../Screen/RequestCall/request";
 import SignUp from "../Screen/SignUp/signup";
+import Thanks from "../Component/Thanks/thank";
 function Router() {
   return (
     <div>
@@ -21,6 +22,7 @@ function Router() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/requestCall" element={<RequestCall />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/thank" element={<Thanks />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

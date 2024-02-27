@@ -1,0 +1,9 @@
+.thank_text h1{
+    font-size: 60px;
+    color: var(--color);
+    font-family: var(--fontFamily);
+    height: 47.8vh;
+display:  flex;
+align-items: center;
+justify-content: center;
+}

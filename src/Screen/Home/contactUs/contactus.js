@@ -9,9 +9,9 @@ import "./contact.css";
 const ContactUs = () => {
   const handleSubmit = async (event) => {
     window.location.href = "/requestCall";
-    toast.success("Our Team Contact You As Soon As Possible Thank You!", {
-      position: "top-center",
-    });
+    // toast.success("Our Team Contact You As Soon As Possible Thank You!", {
+    //   position: "top-center",
+    // });
   };
   return (
     <div className="bg_contact">
@@ -22,7 +22,8 @@ const ContactUs = () => {
           </Grid>
           <Grid item lg={5} md={12} sm={12} xs={12} className="contact_form">
             <form
-              action="https://formsubmit.co/bilalmehfooz253@gmail.com"
+              action="https://formsubmit.co/bilalmehfooz253@gmail.com
+              "
               onSubmit={handleSubmit}
               method="POST"
               class=" p-4 p-md-5 contact-form"
@@ -32,7 +33,7 @@ const ContactUs = () => {
                 type="hidden"
                 name="_next"
                 href="#footer"
-                value="https://empirestatewebsite.vercel.app"
+                value="https://empirestatewebsite.vercel.app/thank"
               />
               <h4>Dropsdas Your Message Here</h4>
               <label>Name</label>

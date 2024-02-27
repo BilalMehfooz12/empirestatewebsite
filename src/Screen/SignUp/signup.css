@@ -5,8 +5,8 @@
 .signup_text{
     border:  3px solid var(--color);
     padding: 2%;
-    margin-top: 2%;
-    height: 45.2vh;
+    margin-top: 2% !important;
+    height: 44.2vh !important;
 }
 
 .register_input h4{
