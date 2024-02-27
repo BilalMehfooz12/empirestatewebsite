@@ -22,7 +22,7 @@ const ContactUs = () => {
           </Grid>
           <Grid item lg={5} md={12} sm={12} xs={12} className="contact_form">
             <form
-              action="https://formsubmit.co/bilalmehfooz253@gmail.com
+              action="https://formsubmit.co/empirestatetecksolutions@gmail.com
               "
               onSubmit={handleSubmit}
               method="POST"
@@ -58,7 +58,11 @@ const ContactUs = () => {
               <br></br>
               <button
                 type="submit"
-                style={{ backgroundColor: "rgb(0,134,173)", border: "none" }}
+                style={{
+                  backgroundColor: "rgb(0,134,173)",
+                  padding: "5% 13%",
+                  border: "none",
+                }}
               >
                 Submit
               </button>
