@@ -10,12 +10,14 @@
   justify-content: center;
 }
 .message_contact{
-    color: var(--color);
+    color: white;
+    background-color: var(--color);
     font-family: var(--fontFamily);
      margin: 0%;
     padding: 0%;
-margin-top: -1%;
-margin-bottom: -5%;
+margin-top: -1.5%;
+padding: 1% 0%;
+margin-bottom: -1.5%;
 }
 
 .text_contact_second{
@@ -37,7 +39,10 @@ margin-bottom: -5%;
     color: var(--color);
     /* font-weight: 600; */
     text-align: start !important;
-margin: 0%;
+    font-family: var(--fontfamily) !important;
+    margin: 0%;
+    font-weight: bold;
+font-size: 18px !important;
 padding: 0%;
 margin-bottom: -5%;
 }

@@ -13,72 +13,72 @@ const RequestCall = () => {
   };
   return (
     <div>
-      <Container>
-        <h2 className="request_heading"> Request a Call Back</h2>
-        <Grid container className="request_main">
-          <Grid item lg={7} className="contact_second_request">
-            <form
-              action="https://formsubmit.co/bilalmehfooz253@gmail.com"
-              onSubmit={handleSubmit}
-              method="POST"
-              class=" p-4 p-md-5 contact-form"
+      <Container
+        className="signup_main"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid container maxWidth="lg" spacing={2} className="signup_text">
+          <Grid item lg={12} md={12} sm={12} xs={12} className="register_input">
+            <h4>Request a Call Back</h4>
+          </Grid>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Name</p>
+            <input type="name" name="Name" required autoComplete="off" />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Email</p>
+            <input type="email" name="Email" required autoComplete="off" />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Phone Number</p>
+            <input
+              type="text"
+              name="Phone Number"
+              required
+              autoComplete="off"
+            />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Preferred Time</p>
+            <textarea
+              type="text"
+              className="register_input_text_area"
+              name="Course"
+              required
+              autoComplete="off"
+            />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Message</p>
+            <textarea
+              type="text"
+              className="register_input_text_area"
+              name="Message"
+              required
+              autoComplete="off"
+            />
+          </Grid>
+          <br></br> <br></br>
+          <br></br>
+          <Grid item lg={4}>
+            <Button
+              style={{
+                backgroundColor: "rgb(0,134,173)",
+                color: "white",
+                padding: "5% 10%",
+                marginTop: "5%",
+              }}
             >
-              <input type="hidden" name="_captcha" value="false" />
-              <input
-                type="hidden"
-                name="_next"
-                href="#footer"
-                value="http://localhost:3000"
-              />
-              <p>Name</p>
-              <input type="name" name="Name" required autoComplete="off" />
-              <br></br>
-              <br></br>
-              <p>Email</p>
-              <input type="name" name="Email" required autoComplete="off" />
-              <br></br>
-              <br></br>
-              <p>Phone Number</p>
-              <input
-                type="text"
-                name="Phone Number"
-                required
-                autoComplete="off"
-              />
-              <br></br>
-              <br></br>
-              <p>Preferred Time</p>
-              <textarea
-                className="text_contact_request"
-                type="name"
-                name="Prefer Time"
-                required
-                autoComplete="off"
-              />
-              <br></br>
-              <br></br>
-              <p>Message</p>
-              <textarea
-                className="text_contact_request"
-                type="name"
-                name="Message"
-                required
-                autoComplete="off"
-              />
-              <br></br>
-              <br></br>
-              <button
-                style={{
-                  background: "rgb(0,134,173)",
-                  color: "white",
-                  padding: "2% 10%",
-                  border: "none",
-                }}
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+              Submit
+            </Button>
           </Grid>
         </Grid>
       </Container>

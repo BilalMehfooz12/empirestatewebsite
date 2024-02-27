@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ScrollToTop.css"; // Assuming you have a separate CSS file for styling
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
@@ -24,15 +24,27 @@ const ScrollToTop = () => {
   };
 
   const handleScrollRequest = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > -0) {
       setreuestIsVisible(true);
     } else {
       setreuestIsVisible(false);
     }
   };
+  useEffect(() => {
+    // Add event listener to handle scroll
+    window.addEventListener("scroll", handleScrollRequest);
+
+    // Initial check for visibility when component mounts
+    handleScrollRequest();
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScrollRequest);
+    };
+  }, []);
 
   window.addEventListener("scroll", handleScroll);
-  window.addEventListener("scroll", handleScrollRequest);
+  // window.addEventListener("scroll", handleScrollRequest);
 
   return (
     <div className="scroll-to-top">
@@ -40,10 +52,10 @@ const ScrollToTop = () => {
         {isVisible && (
           <div>
             {/* <i className="fas fa-chevron-up"></i> */}
-            <KeyboardArrowUpIcon
+            {/* <KeyboardArrowUpIcon
               className="srcoll_icon"
               onClick={scrollToTop}
-            />
+            /> */}
           </div>
         )}
         {reuestisVisible && (

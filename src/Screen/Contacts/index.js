@@ -15,69 +15,62 @@ const Contacts = () => {
   };
   return (
     <div>
-      <Container className="contact_second_main">
-        <div className="border_contact">
-          <form
-            action="https://formsubmit.co/bilalmehfooz253@gmail.com"
-            onSubmit={handleSubmit}
-            method="POST"
-            // class=" p-4 p-md-5 contact-form"
-          >
-            <input type="hidden" name="_captcha" value="false" />
+      <Container
+        className="signup_main"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid container maxWidth="lg" spacing={2} className="signup_text">
+          <Grid item lg={12} md={12} sm={12} xs={12} className="register_input">
+            <h4>Drop Your Message Here</h4>
+          </Grid>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Name</p>
+            <input type="name" name="Name" required autoComplete="off" />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Email</p>
+            <input type="email" name="Email" required autoComplete="off" />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
+            <p>Phone Number</p>
             <input
-              type="hidden"
-              name="_next"
-              href="#footer"
-              value="http://localhost:3000"
+              type="text"
+              name="Phone Number"
+              required
+              autoComplete="off"
             />
-            <Grid container className="contact_second_form" spacing={3}>
-              <Grid item lg={12} md={12} sm={12} xs={12}>
-                <h5 className="message_contact">Drop Your Message Here</h5>
-              </Grid>
-              <Grid item lg={4} md={4} sm={4} xs={12}>
-                <p>Name</p>
-                <br></br>
-                <input type="name" name="Name" required autoComplete="off" />
-              </Grid>
-              <Grid item lg={4} md={4} sm={4} xs={12}>
-                <p>Contact No</p>
-                <br></br>
-                <input type="text" name="Number" required autoComplete="off" />
-              </Grid>
-              <Grid item lg={4} md={4} sm={4} xs={12}>
-                <p>Email</p>
-                <br></br>
-                <input type="email" name="Email" required autoComplete="off" />
-              </Grid>
-              <Grid item lg={8} md={8} sm={8} xs={12}>
-                <p>Message</p>
-                <br></br>
-                <br></br>
-                <textarea
-                  className="text_contact_second"
-                  type="message"
-                  name="Message"
-                  required
-                  autoComplete="off"
-                />
-              </Grid>
-              <Grid item lg={1} md={1} sm={1} xs={12}>
-                <br></br>
-                <button
-                  style={{
-                    background: "rgb(0,134,173)",
-                    color: "white",
-                    padding: "4% 20%",
-                    border: "none",
-                  }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </Grid>
-            </Grid>
-          </form>
-        </div>
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={8} className="register_input_filed">
+            <p>Message</p>
+            <textarea
+              type="text"
+              className="register_input_text_area"
+              name="Message"
+              required
+              autoComplete="off"
+            />
+          </Grid>
+          <br></br> <br></br>
+          <br></br>
+          <Grid item lg={4}>
+            <Button
+              style={{
+                backgroundColor: "rgb(0,134,173)",
+                color: "white",
+                padding: "5% 10%",
+                marginTop: "5%",
+              }}
+            >
+              Submit
+            </Button>
+          </Grid>
+        </Grid>
       </Container>
       <Footer />
     </div>

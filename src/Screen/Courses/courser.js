@@ -143,12 +143,14 @@ const Courses = () => {
         >
           <br></br>
           <br></br>
-          <Grid item lg={5.5} xs={12}>
+          <Grid item lg={3.5} xs={12}>
             <h1>Courses</h1>
           </Grid>
-          <Grid item lg={1.3}>
+          <Grid item lg={3}>
+            <br></br>
             <br></br>
             <TextField
+              style={{ width: "100%" }}
               placeholder="Search Courses"
               type="text"
               value={inpputSearch}

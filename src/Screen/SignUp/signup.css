@@ -4,27 +4,42 @@
 }
 .signup_text{
     border:  3px solid var(--color);
+    padding: 2%;
     margin-top: 2%;
-}
-.register_input{
-    padding: 4%;
-}
-.register_input h4{
-color: var(--color);
-font-family: var(--fontfamily);
-text-align: center !important;
-padding-top: 3%;
+    height: 45.2vh;
 }
 
-.register_input  p{
+.register_input h4{
+color: white;
+background-color: var(--color);
+font-family: var(--fontfamily);
+text-align: center !important;
+margin: 0%;
+padding: 1.2% 0%;
+margin-top: -3%;
+}
+.register_input_text_area{
+    width: 100%;
+    border: 2px solid var(--color);
+    outline: none;
+    padding-left: 1%;
+    border-radius: 3px;
+    height: 12vh;
+    
+}
+
+.register_input_filed  p{
     color: var(--color);
     /* font-weight: 600; */
     text-align: start !important;
-margin: 0%;
-padding: 0%;
-margin-bottom: -4%;
+    font-family: var(--fontfamily) !important;
+    margin: 0%;
+    font-weight: bold;
+font-size: 18px !important;
+    padding: 0%;
+margin-bottom: 2%;
 }
-.register_input  input{
+.register_input_filed  input{
     width: 100%;
     border: 2px solid var(--color);
     outline: none;

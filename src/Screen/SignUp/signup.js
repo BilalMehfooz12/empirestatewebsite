@@ -10,40 +10,65 @@ const SignUp = () => {
         className="signup_main"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <Grid container maxWidth="sm" className="signup_text">
+        <Grid container maxWidth="lg" spacing={2} className="signup_text">
           <Grid item lg={12} md={12} sm={12} xs={12} className="register_input">
             <h4>Register Now</h4>
+          </Grid>
+          <Grid item lg={4} className="register_input_filed">
             <p>Name</p>
-            <br></br>
             <input type="name" name="Name" required autoComplete="off" />
-            <br></br>
-            <br></br>
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
             <p>Email</p>
-            <br></br>
             <input type="email" name="Email" required autoComplete="off" />
-            <br></br>
-            <br></br>
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
             <p>Phone Number</p>
-            <br></br>
             <input
               type="text"
               name="Phone Number"
               required
               autoComplete="off"
             />
-            <br></br>
-            <br></br>
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
             <p>Course</p>
-            <br></br>
-            <textarea type="text" name="Course" required autoComplete="off" />
-            <br></br>
-            <br></br>
+            <textarea
+              type="text"
+              className="register_input_text_area"
+              name="Course"
+              required
+              autoComplete="off"
+            />
+          </Grid>
+          <br></br>
+          <br></br>
+          <Grid item lg={4} className="register_input_filed">
             <p>Message</p>
-            <br></br>
-            <textarea type="text" name="Message" required autoComplete="off" />
-            <br></br> <br></br>
+            <textarea
+              type="text"
+              className="register_input_text_area"
+              name="Message"
+              required
+              autoComplete="off"
+            />
+          </Grid>
+          <br></br> <br></br>
+          <br></br>
+          <Grid item lg={4}>
             <Button
-              style={{ backgroundColor: "rgb(0,134,173)", color: "white" }}
+              style={{
+                backgroundColor: "rgb(0,134,173)",
+                color: "white",
+                padding: "5% 10%",
+                marginTop: "5%",
+              }}
             >
               Register Now
             </Button>
