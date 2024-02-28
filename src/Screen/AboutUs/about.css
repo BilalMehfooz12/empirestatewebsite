@@ -3,7 +3,9 @@
     
 }
 .about_main_height{
-    height: 47vh;
+    height: 51vh !important;
+    display: flex !important;
+    align-items: center !important;
 }
 .about_text h4{
     display: flex;

@@ -67,7 +67,7 @@ const Contacts = () => {
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={8} className="register_input_filed">
+            <Grid item lg={10} className="register_input_filed">
               <p>Message</p>
               <textarea
                 type="text"
@@ -79,14 +79,24 @@ const Contacts = () => {
             </Grid>
             <br></br> <br></br>
             <br></br>
-            <Grid item lg={4}>
+            <Grid
+              item
+              lg={2}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <button
                 style={{
                   backgroundColor: "rgb(0,134,173)",
                   color: "white",
-                  padding: "5% 15%",
+                  padding: "10% 20%",
+                  // height: "5vh",
                   border: "none",
                   marginTop: "5%",
+                  width: "100%",
                 }}
                 type="submit"
               >

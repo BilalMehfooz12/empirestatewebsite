@@ -24,8 +24,7 @@
   color: white  ;
   text-align:start !important;
   font-family: var(--fontFamily);
-  cursor: pointer;
-}
+  }
 .footer_services h2{
   margin-bottom: 5%;
   text-align: start;

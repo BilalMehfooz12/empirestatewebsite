@@ -15,7 +15,7 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <div className="header_sticky" style={{ height: "17vh" }}>
+    <div className="header_sticky" style={{ height: "14vh" }}>
       <div class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           {/* <img src={logo} className="logo_img" /> */}

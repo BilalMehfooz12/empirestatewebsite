@@ -68,9 +68,9 @@ const RequestCall = () => {
             <br></br>
             <Grid item lg={4} className="register_input_filed">
               <p>Preferred Time</p>
-              <textarea
+              <input
                 type="text"
-                className="register_input_text_area"
+                // className="register_input_text_area"
                 name="Preferred Time"
                 required
                 autoComplete="off"
@@ -78,7 +78,7 @@ const RequestCall = () => {
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={4} className="register_input_filed">
+            <Grid item lg={6} className="register_input_filed">
               <p>Message</p>
               <textarea
                 type="text"
@@ -90,14 +90,24 @@ const RequestCall = () => {
             </Grid>
             <br></br> <br></br>
             <br></br>
-            <Grid item lg={4}>
+            <Grid
+              item
+              lg={2}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <button
                 style={{
                   backgroundColor: "rgb(0,134,173)",
                   color: "white",
-                  padding: "5% 15%",
-                  marginTop: "5%",
+                  padding: "10% 20%",
+                  // height: "5vh",
                   border: "none",
+                  marginTop: "5%",
+                  width: "100%",
                 }}
                 type="submit"
               >

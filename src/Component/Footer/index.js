@@ -38,7 +38,15 @@ const Footer = () => {
             <p>Live & Interactive</p>
             <p>Convenient & Remote</p>
           </Grid>
-          <Grid item lg={2.5} md={3} sm={5} xs={12} className="footer_services">
+          <Grid
+            item
+            lg={2.5}
+            md={3}
+            sm={5}
+            xs={12}
+            style={{ cursor: "pointer" }}
+            className="footer_services"
+          >
             <h2>Important Link</h2>
             <p>Home</p>
             <p onClick={() => naviagte("/aboutus")}>About</p>

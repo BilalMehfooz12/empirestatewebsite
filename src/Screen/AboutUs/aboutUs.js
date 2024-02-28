@@ -5,8 +5,8 @@ import Footer from "../../Component/Footer";
 import "./about.css";
 const AboutUs = () => {
   return (
-    <div className="about_main_height">
-      <Container>
+    <div>
+      <Container className="about_main_height">
         <Grid container gap={5} className="about_main">
           <Grid item lg={5.5} md={5.5} sm={12} className="about_text">
             <h4>EMPIRE STATE TECH SOLUTION (ESTS)</h4>

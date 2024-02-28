@@ -58,9 +58,9 @@ const ScrollToTop = () => {
             /> */}
           </div>
         )}
-        {reuestisVisible && (
-          // <div className="scroll-icon">
-
+        {/* {reuestisVisible && ( */}
+        //{" "}
+        <div className="scroll-icon">
           <div
             style={{
               display: "flex",
@@ -84,8 +84,9 @@ const ScrollToTop = () => {
               <PhoneEnabledIcon className="what_app_icon" />
             </div>
           </div>
-          // </div>
-        )}
+          //{" "}
+        </div>
+        {/* )} */}
       </div>
     </div>
   );
