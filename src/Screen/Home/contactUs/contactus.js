@@ -22,7 +22,7 @@ const ContactUs = () => {
           </Grid>
           <Grid item lg={5} md={12} sm={12} xs={12} className="contact_form">
             <form
-              action="https://formsubmit.co/empirestatetecksolutions@gmail.com
+              action="https://formsubmit.co/empirestatetechsolutions@gmail.com
               "
               onSubmit={handleSubmit}
               method="POST"
@@ -33,7 +33,7 @@ const ContactUs = () => {
                 type="hidden"
                 name="_next"
                 href="#footer"
-                value="https://empirestatewebsite.vercel.app/thank"
+                value="http://localhost:3000/thank"
               />
               <h4>Dropsdas Your Message Here</h4>
               <label>Name</label>
@@ -56,14 +56,7 @@ const ContactUs = () => {
               <textarea name="Message" />
               <br></br>
               <br></br>
-              <button
-                type="submit"
-                style={{
-                  backgroundColor: "rgb(0,134,173)",
-                  padding: "5% 13%",
-                  border: "none",
-                }}
-              >
+              <button type="submit" id="contact_btn_home_page">
                 Submit
               </button>
             </form>

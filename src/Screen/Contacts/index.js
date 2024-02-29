@@ -20,7 +20,7 @@ const Contacts = () => {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <form
-          action="https://formsubmit.co/empirestatetecksolutions@gmail.com
+          action="https://formsubmit.co/empirestatetechsolutions@gmail.com
           "
           onSubmit={handleSubmit}
           method="POST"
@@ -31,7 +31,7 @@ const Contacts = () => {
             type="hidden"
             name="_next"
             href="#footer"
-            value="https://empirestatewebsite.vercel.app/thank"
+            value="http://localhost:3000/thank"
           />
           <Grid container maxWidth="lg" spacing={2} className="signup_text">
             <Grid
@@ -86,18 +86,12 @@ const Contacts = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                width: "100%",
               }}
             >
               <button
-                style={{
-                  backgroundColor: "rgb(0,134,173)",
-                  color: "white",
-                  padding: "10% 20%",
-                  // height: "5vh",
-                  border: "none",
-                  marginTop: "5%",
-                  width: "100%",
-                }}
+                id="contact_btn_home_page"
+                style={{ width: "90%" }}
                 type="submit"
               >
                 Submit

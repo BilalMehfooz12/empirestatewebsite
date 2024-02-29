@@ -1,68 +1,82 @@
-.main_contact{
+.main_contact {
     padding-top: 4%;
     display: flex;
     justify-content: center;
-}
-.bg_contact{
+  }
+  .bg_contact {
     background-image: url(../../../Image/contactbgImage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: auto;
-}
-.conatact_image img{
-width: 100%;
-height: auto;
-}
-.contact_form{
+  }
+  .conatact_image img {
+    width: 100%;
+    height: auto;
+  }
+  .contact_form {
     border: 2px solid var(--color);
-padding: 2%;
-text-align: start;
-}
-.contact_form h4{
+    padding: 2%;
+    text-align: start;
+  }
+  .contact_form h4 {
     color: var(--color);
     text-align: start;
-    
-}
-.contact_form label{
+  }
+  .contact_form label {
     color: var(--color);
     font-weight: 600;
-}
-.contact_form input{
+  }
+  .contact_form input {
     width: 100%;
     border: 2px solid var(--color);
     outline: none;
     padding-left: 1%;
-}
-.contact_form textarea{
+  }
+  .contact_form textarea {
     width: 100%;
     border: 2px solid var(--color);
     outline: none;
     padding-left: 1%;
-}
-.contact_form Button{
+  }
+  .contact_form Button {
     color: white;
-padding: 1.5% 5%;
-}
-.what_app_main{
+    padding: 1.5% 5%;
+  }
+  .what_app_main {
     display: flex;
     justify-content: end;
     margin-top: 3%;
-}
-.what_app_btn{
-    background-color: rgb(50,186,2) !important;
-    color: white!important;
+  }
+  .what_app_btn {
+    background-color: rgb(50, 186, 2) !important;
+    color: white !important;
     padding: 3% 5% !important;
-    margin-top:4% !important;
-}
-/* .what_app_icon{
-    color:  white !important;
-    font-size: 40px !important;
-margin-top :10% !important;
-margin-bottom: 10% !important;
-} */
-/* .what_app_icon_main{
-    background-color: rgb(50,186,2);
-    border-radius: 50%;
-    height: auto;
-} */
+    margin-top: 4% !important;
+  }
+  
+  #contact_btn_home_page {
+    background-color: rgb(0, 134, 173);
+    padding: 3% 13% !important;
+    color: white;
+    border: none;
+    font-size: 22px !important;
+    font-weight: 400;
+    font-family: var(--fontFamily);
+    transition: 1s;
+  }
+  #contact_btn_home_page:hover {
+    background-color: rgb(35, 189, 235) !important;
+  }
+  /* .what_app_icon{
+      color:  white !important;
+      font-size: 40px !important;
+  margin-top :10% !important;
+  margin-bottom: 10% !important;
+  } */
+  /* .what_app_icon_main{
+      background-color: rgb(50,186,2);
+      border-radius: 50%;
+      height: auto;
+  } */
+  
