@@ -19,6 +19,8 @@ import CouserFour from "../../../Image/courseFour.png";
 import serviceOne from "../../../Image/service1.png";
 import serviceTwo from "../../../Image/service2.png";
 import serviceThree from "../../../Image/service3.png";
+import couserImageOne from "../../../Image/courserImageOne.png";
+import couserImageTwo from "../../../Image/courserImageTwo.png";
 
 const WebsiteFeatures = () => {
   const navigate = useNavigate();
@@ -83,8 +85,8 @@ const WebsiteFeatures = () => {
             <h3>Courses</h3>
             <p>
               {" "}
-              Our company offers responsive design services that assure your
-              website will adjust to presence.
+              We Offers best courses that assure to enhance and improve your
+              skill set. Choose and start to learn now.
             </p>
           </Grid>
           <Grid item lg={1}>
@@ -98,7 +100,7 @@ const WebsiteFeatures = () => {
         </Grid>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg">
           <Swiper
             slidesPerView={1}
@@ -532,13 +534,177 @@ const WebsiteFeatures = () => {
                 </Grid>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
-              <div>
-                <img src={img2} alt="Image 1" />
-                <img src={img2} alt="Image 2" />
-              </div>
-            </SwiperSlide> */}
+      
           </Swiper>
+        </Grid>
+      </div> */}
+
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Grid container spacing={3} maxWidth="lg">
+          <Grid item lg={3} className="slider_image">
+            <Grid container className="course_image">
+              <Grid item lg={3}>
+                <img src={couserImageTwo} />
+              </Grid>
+              <Grid item lg={6}></Grid>
+              <Grid item lg={3}>
+                <img src={couserImageOne} />
+              </Grid>
+              <div className="course_teacher">
+                <p>
+                  Application Security Testing For<br></br> Absolute Beginners
+                </p>
+                <b>By Sir Haris</b>
+              </div>
+            </Grid>
+            <p>Tecnology</p>
+            <h5>Aplication Support</h5>
+            <Grid container className="slider_content_main">
+              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                <AccessTimeIcon />
+              </Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
+                <label>2 Hour</label>
+              </Grid>
+              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                <SignalCellularAltIcon />
+              </Grid>
+              <Grid
+                item
+                lg={3}
+                md={1}
+                sm={1.5}
+                xs={1.5}
+                className="slider_content"
+              >
+                <label>Beginner</label>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item lg={3} className="slider_image">
+            <Grid container className="course_image">
+              <Grid item lg={3}>
+                <img src={couserImageTwo} />
+              </Grid>
+              <Grid item lg={6}></Grid>
+              <Grid item lg={3}>
+                <img src={couserImageOne} />
+              </Grid>
+              <div className="course_teacher">
+                <p>
+                  Application Security Testing For<br></br> Absolute Beginners
+                </p>
+                <b>By Sir Haris</b>
+              </div>
+            </Grid>
+            <p>Tecnology</p>
+            <h5>Aplication Support</h5>
+            <Grid container className="slider_content_main">
+              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                <AccessTimeIcon />
+              </Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
+                <label>2 Hour</label>
+              </Grid>
+              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                <SignalCellularAltIcon />
+              </Grid>
+              <Grid
+                item
+                lg={3}
+                md={1}
+                sm={1.5}
+                xs={1.5}
+                className="slider_content"
+              >
+                <label>Beginner</label>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item lg={3} className="slider_image">
+            <Grid container className="course_image">
+              <Grid item lg={3}>
+                <img src={couserImageTwo} />
+              </Grid>
+              <Grid item lg={6}></Grid>
+              <Grid item lg={3}>
+                <img src={couserImageOne} />
+              </Grid>
+              <div className="course_teacher">
+                <p>
+                  Application Security Testing For<br></br> Absolute Beginners
+                </p>
+                <b>By Sir Haris</b>
+              </div>
+            </Grid>
+            <p>Tecnology</p>
+            <h5>Aplication Support</h5>
+            <Grid container className="slider_content_main">
+              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                <AccessTimeIcon />
+              </Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
+                <label>2 Hour</label>
+              </Grid>
+              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                <SignalCellularAltIcon />
+              </Grid>
+              <Grid
+                item
+                lg={3}
+                md={1}
+                sm={1.5}
+                xs={1.5}
+                className="slider_content"
+              >
+                <label>Beginner</label>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item lg={3} className="slider_image">
+            <Grid container className="course_image">
+              <Grid item lg={3}>
+                <img src={couserImageTwo} />
+              </Grid>
+              <Grid item lg={6}></Grid>
+              <Grid item lg={3}>
+                <img src={couserImageOne} />
+              </Grid>
+              <div className="course_teacher">
+                <p>
+                  Application Security Testing For<br></br> Absolute Beginners
+                </p>
+                <b>By Sir Haris</b>
+              </div>
+            </Grid>
+            <p>Tecnology</p>
+            <h5>Aplication Support</h5>
+            <Grid container className="slider_content_main">
+              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                <AccessTimeIcon />
+              </Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
+                <label>2 Hour</label>
+              </Grid>
+              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
+              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                <SignalCellularAltIcon />
+              </Grid>
+              <Grid
+                item
+                lg={3}
+                md={1}
+                sm={1.5}
+                xs={1.5}
+                className="slider_content"
+              >
+                <label>Beginner</label>
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
       </div>
     </div>
