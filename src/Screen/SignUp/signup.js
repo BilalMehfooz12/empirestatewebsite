@@ -22,7 +22,7 @@ const SignUp = () => {
         >
           <form
             action="https://formsubmit.co/empirestatetechsolutions@gmail.com
-          "
+   "
             onSubmit={handleSubmit}
             method="POST"
             // class=" p-4 p-md-5 contact-form"
@@ -32,7 +32,7 @@ const SignUp = () => {
               type="hidden"
               name="_next"
               href="#footer"
-              value="http://localhost:3000/thank"
+              value="https://empirestatewebsite.vercel.app/thank"
             />
             <Grid container maxWidth="sm" spacing={2} className="signup_text">
               <Grid
