@@ -91,8 +91,8 @@ const WebsiteFeatures = () => {
           </Grid>
           <Grid item lg={1}>
             <Button
-              style={{ backgroundColor: "rgb(0,134,174)", color: "white" }}
-              onClick={() => navigate("/courses")}
+className="veiw_course_btn"
+onClick={() => navigate("/courses")}
             >
               View All
             </Button>

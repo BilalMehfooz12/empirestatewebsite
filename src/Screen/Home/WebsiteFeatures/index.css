@@ -18,12 +18,12 @@ margin-bottom: 6%;
 padding: 1%;
 }
 .course_teacher{
-  color: white;
-  font-family: var(--fontFamily);
-  padding-left: 4%;
-  padding-top: 6%;
-  padding-bottom: 2%;
-  margin: 0%;
+  color: white !important;
+  font-family: var(--fontFamily) !important;
+  padding-left: 4% !important;
+  padding-top: 6% !important;
+  padding-bottom: 2% !important;
+  margin: 0% !important;
 }
 .course_image img{
 width: 100%;
@@ -85,7 +85,14 @@ height: auto;
     font: bolder;
   }
   
-
+  .veiw_course_btn{
+    background-color:rgb(0,134,174) !important;
+    color: white !important;
+    transition: 1s !important;
+  }
+  .veiw_course_btn:hover{
+background-color: rgb(26, 174, 219) !important;
+  }
 
   @media (max-width:550px){
     .website_feature_main{

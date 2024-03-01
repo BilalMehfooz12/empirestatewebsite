@@ -5,7 +5,7 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../../Image/empirelogo4.png";
+import logo from "../../Image/empirelogo5.jpg";
 
 import { BrowserRouter } from "react-router-dom";
 import { HashLink, HashLink as link } from "react-router-hash-link";
@@ -18,7 +18,11 @@ const Header = () => {
     <div className="header_sticky" style={{ height: "14vh" }}>
       <div class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          {/* <img src={logo} className="logo_img" /> */}
+          {/* <img
+            src={logo}
+            className="logo_img"
+    
+          /> */}
           <a class="navbar-brand" href="#"></a>
           <button
             class="navbar-toggler"

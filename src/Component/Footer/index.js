@@ -14,7 +14,7 @@ import linkedin from "../../Image/icon/linkedin.png";
 import twitter from "../../Image/icon/twitter.png";
 import insta from "../../Image/icon/insta.png";
 import facebook from "../../Image/icon/facebook.png";
-import logo from "../../Image/Empirelogo.png";
+import logo from "../../Image/empirelogo5.jpg";
 import "./index.css";
 
 const Footer = () => {
@@ -25,10 +25,11 @@ const Footer = () => {
         <Grid container className="footer_main" gap={5}>
           <Grid item lg={3} md={3} sm={5} xs={12} className="footer_services">
             {/* <img src={logo} /> */}
-            <h4>Empire State Teck Solution</h4>
+            <img src={logo} className="logo_img" />
+
+            {/* <h4>Empire State Teck Solution</h4> */}
             <p style={{ marginTop: "6%" }}>
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s
+              Online classes with flexible timing to learn for career growth.
             </p>
           </Grid>
 

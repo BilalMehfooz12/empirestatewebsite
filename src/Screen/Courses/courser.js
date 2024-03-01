@@ -8,7 +8,7 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { InputAdornment, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import CouserOne from "../../Image/courseOne.png";
+import CouserOne from "../../Image/courserImageOne.png";
 import CouserTwo from "../../Image/courseTwo.png";
 import CouserThree from "../../Image/courseThree.png";
 import CouserFour from "../../Image/courseFour.png";
@@ -17,91 +17,119 @@ import { useState } from "react";
 const Courses = () => {
   const obj = [
     {
-      image: CouserTwo,
+      imageRole: CouserOne,
       tecknology: "Tecnology",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserTwo,
+      imageRole: CouserOne,
+
       tecknology: "React",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserThree,
+      imageRole: CouserOne,
       tecknology: "Devops",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserOne,
+      imageRole: CouserOne,
       tecknology: "Scrum",
       application: "Aplication Support",
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       icon: <AccessTimeIcon />,
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserTwo,
+      imageRole: CouserOne,
       tecknology: "Tecnology",
       application: "Aplication Support",
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       icon: <AccessTimeIcon />,
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserTwo,
+      imageRole: CouserOne,
       tecknology: "React",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserThree,
+      imageRole: CouserOne,
       tecknology: "Devops",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserTwo,
+      imageRole: CouserOne,
       tecknology: "Tecnology",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserTwo,
+      imageRole: CouserOne,
       tecknology: "React",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
     {
-      image: CouserThree,
+      imageRole: CouserOne,
       tecknology: "Devops",
       application: "Aplication Support",
       icon: <AccessTimeIcon />,
+      image:
+        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
@@ -138,6 +166,7 @@ const Courses = () => {
           style={{
             display: "flex",
             justifyContent: "center",
+            backgroundColor: "white",
             paddingTop: "2%",
           }}
         >
@@ -166,7 +195,6 @@ const Courses = () => {
             />
           </Grid>
         </Grid>
-        <br></br>
 
         <Container>
           <Grid container spacing={3} className="courses_images">
@@ -178,11 +206,32 @@ const Courses = () => {
                   md={3}
                   sm={4}
                   xs={12}
-                  className="course_image"
+                  // className="course_image"
+                  style={{ marginBottom: "-4%" }}
                 >
-                  <img src={item.image} alt="Image 1" />
-                  <p>{item.tecknology}</p>
-                  <h5>{item.application}</h5>
+                  {/* <img src={item.image} alt="Image 1" /> */}
+                  <Grid container className="course_image">
+                    <Grid item lg={3}>
+                      {/* <SignalCellularAltIcon /> */}
+                      <img src={item.image} />
+                    </Grid>
+                    <Grid item lg={6}></Grid>
+                    <Grid item lg={3}>
+                      <img src={item.imageRole} />
+                      {/* <SignalCellularAltIcon /> */}
+                    </Grid>
+                    <div className="course_teacher">
+                      <p>
+                        Application Security Testing For<br></br> Absolute
+                        Beginners
+                      </p>
+                      <b>By Sir Haris</b>
+                    </div>
+                  </Grid>
+                  <p style={{ textAlign: "start", margin: "0%" }}>
+                    {item.tecknology}
+                  </p>
+                  <h5 style={{ textAlign: "start" }}>{item.application}</h5>
                   <Grid container className="slider_content_main">
                     <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
                       {item.icon}

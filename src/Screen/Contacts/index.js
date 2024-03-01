@@ -14,13 +14,16 @@ const Contacts = () => {
     // });
   };
   return (
-    <div>
+    <div style={{ height: "80vh", display: "flex", alignItems: "center" }}>
       <Container
         className="signup_main"
-        style={{ display: "flex", justifyContent: "center" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
       >
         <form
-          action="https://formsubmit.co/empirestatetechsolutions@gmail.com
+          action="https://formsubmit.co/EmpireStateTechSolutions@gmail.com
           "
           onSubmit={handleSubmit}
           method="POST"
@@ -31,9 +34,9 @@ const Contacts = () => {
             type="hidden"
             name="_next"
             href="#footer"
-            value="http://localhost:3000/thank"
+            value="https://empirestatewebsite.vercel.app/thank"
           />
-          <Grid container maxWidth="lg" spacing={2} className="signup_text">
+          <Grid container maxWidth="sm" spacing={2} className="signup_text">
             <Grid
               item
               lg={12}
@@ -44,19 +47,19 @@ const Contacts = () => {
             >
               <h4>Drop Your Message Here</h4>
             </Grid>
-            <Grid item lg={4} className="register_input_filed">
+            <Grid item lg={12} className="register_input_filed">
               <p>Name</p>
               <input type="name" name="Name" required autoComplete="off" />
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={4} className="register_input_filed">
+            <Grid item lg={12} className="register_input_filed">
               <p>Email</p>
               <input type="email" name="Email" required autoComplete="off" />
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={4} className="register_input_filed">
+            <Grid item lg={12} className="register_input_filed">
               <p>Phone Number</p>
               <input
                 type="text"
@@ -67,7 +70,7 @@ const Contacts = () => {
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={10} className="register_input_filed">
+            <Grid item lg={12} className="register_input_filed">
               <p>Message</p>
               <textarea
                 type="text"
@@ -81,7 +84,7 @@ const Contacts = () => {
             <br></br>
             <Grid
               item
-              lg={2}
+              lg={12}
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -89,18 +92,22 @@ const Contacts = () => {
                 width: "100%",
               }}
             >
-              <button
-                id="contact_btn_home_page"
-                style={{ width: "90%" }}
-                type="submit"
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "20%",
+                }}
               >
-                Submit
-              </button>
+                <button id="contact_btn_home_page" type="submit">
+                  Submit
+                </button>
+              </div>
             </Grid>
           </Grid>
         </form>
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

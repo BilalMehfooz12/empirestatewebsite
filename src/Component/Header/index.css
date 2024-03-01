@@ -32,7 +32,9 @@ font-family: var(--fontFamily);
 
 .logo_img{
   width:100%;
-  height:auto
+  height:6vh;
+  display: flex !important;
+  align-items: center !important;
 }
 .centered-text {
   display: flex;
@@ -49,6 +51,11 @@ font-family: var(--fontFamily);
   color: white!important;
 margin-top: 5% !important;
 margin-left: 15% !important;
+transition: 1s !important;
+}
+.login_btn:hover{
+  background-color: rgb(26, 174, 219)!important;
+  color: white!important;
 }
 
 .header_text_resp_one {

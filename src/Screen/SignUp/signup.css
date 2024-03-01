@@ -1,53 +1,54 @@
-.signup_main{
+.signup_main {
     display: flex;
     justify-content: center;
-}
-.signup_text{
-    border:  3px solid var(--color);
+    align-items: center !important;
+  }
+  .signup_text {
+    border: 3px solid var(--color);
     padding: 2%;
     margin-top: 2% !important;
-    height: 47.2vh !important;
-}
-
-.register_input h4{
-color: white;
-background-color: var(--color);
-font-family: var(--fontfamily);
-text-align: center !important;
-margin: 0%;
-padding: 1.2% 0%;
-margin-top: -3%;
-}
-.register_input_text_area{
+    height: auto
+  }
+  
+  .register_input h4 {
+    color: white;
+    background-color: var(--color);
+    font-family: var(--fontfamily);
+    text-align: center !important;
+    margin: 0%;
+    padding: 1.2% 0%;
+    margin-top: -3%;
+  }
+  .register_input_text_area {
     width: 100%;
     border: 2px solid var(--color);
     outline: none;
     padding-left: 1%;
     border-radius: 3px;
     height: 12vh;
-    
-}
-
-.register_input_filed  p{
+  }
+  
+  .register_input_filed p {
     color: var(--color);
     /* font-weight: 600; */
     text-align: start !important;
     font-family: var(--fontfamily) !important;
     margin: 0%;
     font-weight: bold;
-font-size: 18px !important;
+    font-size: 18px !important;
     padding: 0%;
-margin-bottom: 2%;
-}
-.register_input_filed  input{
+    margin-bottom: 2%;
+  }
+  .register_input_filed input {
     width: 100%;
     border: 2px solid var(--color);
     outline: none;
     padding-left: 1%;
     border-radius: 3px;
-}
-.register_input  textarea{
+  }
+  .register_input textarea {
     width: 100%;
     border: 2px solid var(--color);
     outline: none;
-}
+  }
+  
