@@ -5,7 +5,7 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../../Image/empirelogo5.jpg";
+import logo from "../../Image/empirelogo5-removebg-preview.png";
 
 import { BrowserRouter } from "react-router-dom";
 import { HashLink, HashLink as link } from "react-router-hash-link";
