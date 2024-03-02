@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import { toast } from "react-toastify";
 import Footer from "../../Component/Footer";
@@ -32,7 +33,7 @@ const Contacts = () => {
         e.target.reset(); // Reset the form after successful submission
 
         // Redirect to thank you page
-        window.location.href = "https://empirestatewebsite.vercel.app/thank";
+        window.location.href = "http://localhost:3000/thank";
       } else {
         throw new Error("Form submission failed");
       }
@@ -128,7 +129,7 @@ const Contacts = () => {
                         display: "flex",
                         width: "100%",
                         // padding: "2% 4%",
-                        height: "4vh",
+                        height: "4.5vh",
                       }}
                     >
                       <CircularProgress
