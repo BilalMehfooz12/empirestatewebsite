@@ -33,7 +33,7 @@ const Contacts = () => {
         e.target.reset(); // Reset the form after successful submission
 
         // Redirect to thank you page
-        window.location.href = "http://localhost:3000/thank";
+        window.location.href = "https://empirestatewebsite.vercel.app/thank";
       } else {
         throw new Error("Form submission failed");
       }
