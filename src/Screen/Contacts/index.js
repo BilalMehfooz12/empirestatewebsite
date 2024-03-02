@@ -52,19 +52,12 @@ const Contacts = () => {
         }}
       >
         <form
-          action="https://formsubmit.co/EmpireStateTechSolutions@gmail.com
-          "
           onSubmit={handleSubmit}
           method="POST"
           // class=" p-4 p-md-5 contact-form"
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            href="#footer"
-            value="https://empirestatewebsite.vercel.app/thank"
-          />
+          <input type="hidden" name="_next" href="#footer" />
           <Grid container maxWidth="sm" spacing={2} className="signup_text">
             <Grid
               item
