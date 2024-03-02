@@ -1,3 +1,10 @@
+.register_contact_main{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  margin-top: 0.5%;
+}
 .signup_main {
     display: flex;
     justify-content: center;
@@ -5,9 +12,9 @@
   }
   .signup_text {
     border: 3px solid var(--color);
-    padding: 2%;
+    padding: 2% !important;
     margin-top: 2% !important;
-    height: auto
+    height: auto;
   }
   
   .register_input h4 {
@@ -17,7 +24,7 @@
     text-align: center !important;
     margin: 0%;
     padding: 1.2% 0%;
-    margin-top: -3%;
+    margin-top: 2%;
   }
   .register_input_text_area {
     width: 100%;
@@ -51,4 +58,28 @@
     border: 2px solid var(--color);
     outline: none;
   }
-  
+/*   
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    width: "40%",
+  }} */
+
+  .signup_btn{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+  @media (max-width:600px){
+    .signup_main{
+      margin-left: 4%;
+    }
+    .signup_btn{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .register_input_text_area{
+      height: 6vh;
+    }
+  }

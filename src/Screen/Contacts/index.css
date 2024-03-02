@@ -60,3 +60,8 @@
     }
   }
    */
+.contact_us_height{
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+}

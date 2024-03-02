@@ -203,20 +203,20 @@ const Courses = () => {
                 <Grid
                   item
                   lg={3}
-                  md={3}
-                  sm={4}
+                  md={6}
+                  sm={6}
                   xs={12}
                   // className="course_image"
                   style={{ marginBottom: "-4%" }}
                 >
                   {/* <img src={item.image} alt="Image 1" /> */}
                   <Grid container className="course_image">
-                    <Grid item lg={3}>
+                    <Grid item lg={3} md={3} sm={3} xs={3}>
                       {/* <SignalCellularAltIcon /> */}
                       <img src={item.image} />
                     </Grid>
-                    <Grid item lg={6}></Grid>
-                    <Grid item lg={3}>
+                    <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+                    <Grid item lg={3} md={3} sm={3} xs={3}>
                       <img src={item.imageRole} />
                       {/* <SignalCellularAltIcon /> */}
                     </Grid>

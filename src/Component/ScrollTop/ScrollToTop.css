@@ -33,3 +33,19 @@ top: 90%;
     /* margin :10% !important; */
     /* margin-bottom: 10% !important; */
 }
+@media (max-width: 1400px) and (min-width: 700px) {
+.scroll-to-top {
+    position: fixed;
+    right:40%;
+    top: 93%;
+    z-index: 999 !important;
+  }
+}
+@media (max-width:600px){
+  .scroll-to-top {
+    position: fixed;
+    right:40%;
+top: 93%;
+    z-index: 999 !important;
+  }
+}

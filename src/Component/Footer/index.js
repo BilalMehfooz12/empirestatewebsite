@@ -22,12 +22,10 @@ const Footer = () => {
   return (
     <div className="footer_bg_color">
       <Container>
-        <Grid container className="footer_main" gap={5}>
+        <Grid container className="footer_main" columnSpacing={3}>
           <Grid item lg={3} md={3} sm={5} xs={12} className="footer_services">
-            {/* <img src={logo} /> */}
-            <img src={logo} className="logo_img" />
+            <img src={logo} className="footer_logo" />
 
-            {/* <h4>Empire State Teck Solution</h4> */}
             <p style={{ marginTop: "6%" }}>
               Online classes with flexible timing to learn for career growth.
             </p>

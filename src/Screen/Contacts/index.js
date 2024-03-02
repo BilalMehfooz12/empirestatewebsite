@@ -44,7 +44,7 @@ const Contacts = () => {
   };
 
   return (
-    <div style={{ height: "80vh", display: "flex", alignItems: "center" }}>
+    <div className="contact_us_height">
       <Container
         className="signup_main"
         style={{
@@ -59,7 +59,7 @@ const Contacts = () => {
         >
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" href="#footer" />
-          <Grid container maxWidth="sm" spacing={2} className="signup_text">
+          <Grid container maxWidth="sm" rowSpacing={1} className="signup_text">
             <Grid
               item
               lg={12}
@@ -70,19 +70,26 @@ const Contacts = () => {
             >
               <h4>Drop Your Message Here</h4>
             </Grid>
-            <Grid item lg={12} className="register_input_filed">
+            <Grid item lg={12} xs={12} className="register_input_filed">
               <p>Name</p>
               <input type="name" name="Name" required autoComplete="off" />
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={12} className="register_input_filed">
+            <Grid item lg={12} xs={12} className="register_input_filed">
               <p>Email</p>
               <input type="email" name="Email" required autoComplete="off" />
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={12} className="register_input_filed">
+            <Grid
+              item
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              className="register_input_filed"
+            >
               <p>Phone Number</p>
               <input
                 type="text"
@@ -93,7 +100,14 @@ const Contacts = () => {
             </Grid>
             <br></br>
             <br></br>
-            <Grid item lg={12} className="register_input_filed">
+            <Grid
+              item
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              className="register_input_filed"
+            >
               <p>Message</p>
               <textarea
                 type="text"
@@ -108,6 +122,9 @@ const Contacts = () => {
             <Grid
               item
               lg={12}
+              md={12}
+              sm={12}
+              xs={12}
               style={{
                 display: "flex",
                 justifyContent: "center",

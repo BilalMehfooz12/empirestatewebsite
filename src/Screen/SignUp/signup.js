@@ -51,7 +51,7 @@ const SignUp = () => {
   };
   return (
     <div>
-      <div style={{ height: "85vh", display: "flex", alignItems: "center" }}>
+      <div className="register_contact_main">
         <Container
           className="signup_main"
           style={{ display: "flex", justifyContent: "center" }}
@@ -68,7 +68,12 @@ const SignUp = () => {
               href="#footer"
               value="https://empirestatewebsite.vercel.app/thank"
             />
-            <Grid container maxWidth="sm" spacing={2} className="signup_text">
+            <Grid
+              container
+              maxWidth="sm"
+              rowSpacing={1}
+              className="signup_text"
+            >
               <Grid
                 item
                 lg={12}
@@ -79,15 +84,15 @@ const SignUp = () => {
               >
                 <h4>Register Now</h4>
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid item lg={12} xs={12} className="register_input_filed">
                 <p>Name</p>
                 <input type="name" name="Name" required autoComplete="off" />
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid item lg={12} xs={12} className="register_input_filed">
                 <p>Email</p>
                 <input type="email" name="Email" required autoComplete="off" />
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid item lg={12} xs={12} className="register_input_filed">
                 <p>Phone Number</p>
                 <input
                   type="text"
@@ -98,13 +103,20 @@ const SignUp = () => {
               </Grid>
               <br></br>
               <br></br>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid item lg={12} xs={12} className="register_input_filed">
                 <p>Courses</p>
                 <Select
                   value={selectedData}
                   onChange={handleChange}
                   name="Select Course"
-                  style={{ width: "100%", textAlign: "start" }}
+                  style={{
+                    width: "100%",
+                    textAlign: "start",
+                    height: "5vh",
+                    border: "2px solid rgb(0,134,173)",
+                    outline: "none", // Remove this line
+                    textDecoration: "none",
+                  }}
                   displayEmpty
                   required
                   inputProps={{ "aria-label": "Select Email" }}
@@ -117,7 +129,7 @@ const SignUp = () => {
                   </MenuItem>
                 </Select>
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid item lg={12} xs={12} className="register_input_filed">
                 <p>Message</p>
                 <textarea
                   type="text"
@@ -132,6 +144,7 @@ const SignUp = () => {
               <Grid
                 item
                 lg={12}
+                xs={12}
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -139,13 +152,7 @@ const SignUp = () => {
                   width: "100%",
                 }}
               >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    width: "40%",
-                  }}
-                >
+                <div className="signup_btn">
                   <button id="contact_btn_home_page" type="submit">
                     {loading ? (
                       <Box

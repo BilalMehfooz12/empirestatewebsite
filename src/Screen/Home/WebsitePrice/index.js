@@ -12,7 +12,7 @@ const WebsitePrice = () => {
     <div className="webinar_bg">
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg" className="webinar_main">
-          <Grid item lg={11} className="webinar_text">
+          <Grid item lg={11} xs={12} className="webinar_text">
             <h4>Webinars</h4>
             <p>
               {" "}
@@ -20,7 +20,7 @@ const WebsitePrice = () => {
               here.
             </p>
           </Grid>
-          <Grid item lg={1}>
+          <Grid item lg={1} xs={12}>
             <Button
               style={{ backgroundColor: "white", color: "rgb(0,134,174)" }}
             >

@@ -118,11 +118,13 @@ background-color: rgb(26, 174, 219) !important;
 }
 .slider_image p{
   margin: -1% 0%;
+  padding-left: 1%;
   font-size: 16px;
 }
 
 .slider_image h5{
   color: black;
+  padding-left: 1%;
 }
 .slider_content_main{
   background-color: var(--color);

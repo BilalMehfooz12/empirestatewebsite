@@ -60,3 +60,9 @@
 .course_image h5 {
   color: black;
 }
+
+@media (max-width:600px){
+  .courses_images{
+    margin-top: 8% !important;
+  }
+}

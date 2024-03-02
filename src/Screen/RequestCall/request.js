@@ -152,7 +152,14 @@ const RequestCall = () => {
           </form>
         </Container>
         <Footer /> */}
-      <div style={{ height: "85vh", display: "flex", alignItems: "center" }}>
+      <div
+        style={{
+          height: "auto",
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "1%",
+        }}
+      >
         <Container
           className="signup_main"
           style={{ display: "flex", justifyContent: "center" }}
@@ -164,7 +171,12 @@ const RequestCall = () => {
           >
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_next" href="#footer" />
-            <Grid container maxWidth="sm" spacing={2} className="signup_text">
+            <Grid
+              container
+              maxWidth="sm"
+              rowSpacing={1}
+              className="signup_text"
+            >
               <Grid
                 item
                 lg={12}
@@ -175,15 +187,36 @@ const RequestCall = () => {
               >
                 <h4>Request a Call Back</h4>
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid
+                item
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                className="register_input_filed"
+              >
                 <p>Name</p>
                 <input type="name" name="Name" required autoComplete="off" />
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid
+                item
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                className="register_input_filed"
+              >
                 <p>Email</p>
                 <input type="email" name="Email" required autoComplete="off" />
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid
+                item
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                className="register_input_filed"
+              >
                 <p>Phone Number</p>
                 <input
                   type="text"
@@ -194,13 +227,20 @@ const RequestCall = () => {
               </Grid>
               <br></br>
               <br></br>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid
+                item
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                className="register_input_filed"
+              >
                 <p>Preferred Time</p>
                 <Select
                   value={selectedData}
                   onChange={handleChange}
                   name="Selected Time"
-                  style={{ width: "100%", textAlign: "start" }}
+                  style={{ width: "100%", textAlign: "start", height: "4vh" }}
                   displayEmpty
                   required
                   inputProps={{ "aria-label": "Select Email" }}
@@ -219,7 +259,14 @@ const RequestCall = () => {
                   </MenuItem>
                 </Select>
               </Grid>
-              <Grid item lg={12} className="register_input_filed">
+              <Grid
+                item
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                className="register_input_filed"
+              >
                 <p>Message</p>
                 <textarea
                   type="text"
@@ -234,6 +281,9 @@ const RequestCall = () => {
               <Grid
                 item
                 lg={12}
+                md={12}
+                sm={12}
+                xs={12}
                 style={{
                   display: "flex",
                   justifyContent: "center",

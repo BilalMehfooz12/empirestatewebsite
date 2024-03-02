@@ -81,7 +81,7 @@ const WebsiteFeatures = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg" className="course_main">
-          <Grid item lg={11}>
+          <Grid item lg={11} md={11} sm={11} xs={11}>
             <h3>Courses</h3>
             <p>
               {" "}
@@ -89,10 +89,10 @@ const WebsiteFeatures = () => {
               skill set. Choose and start to learn now.
             </p>
           </Grid>
-          <Grid item lg={1}>
+          <Grid item lg={1} md={1} sm={11} xs={12}>
             <Button
-className="veiw_course_btn"
-onClick={() => navigate("/courses")}
+              className="veiw_course_btn"
+              onClick={() => navigate("/courses")}
             >
               View All
             </Button>
@@ -541,13 +541,13 @@ onClick={() => navigate("/courses")}
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container spacing={3} maxWidth="lg">
-          <Grid item lg={3} className="slider_image">
+          <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageTwo} />
               </Grid>
-              <Grid item lg={6}></Grid>
-              <Grid item lg={3}>
+              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageOne} />
               </Grid>
               <div className="course_teacher">
@@ -582,13 +582,13 @@ onClick={() => navigate("/courses")}
               </Grid>
             </Grid>
           </Grid>
-          <Grid item lg={3} className="slider_image">
+          <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageTwo} />
               </Grid>
-              <Grid item lg={6}></Grid>
-              <Grid item lg={3}>
+              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageOne} />
               </Grid>
               <div className="course_teacher">
@@ -623,13 +623,13 @@ onClick={() => navigate("/courses")}
               </Grid>
             </Grid>
           </Grid>
-          <Grid item lg={3} className="slider_image">
+          <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageTwo} />
               </Grid>
-              <Grid item lg={6}></Grid>
-              <Grid item lg={3}>
+              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageOne} />
               </Grid>
               <div className="course_teacher">
@@ -664,13 +664,13 @@ onClick={() => navigate("/courses")}
               </Grid>
             </Grid>
           </Grid>
-          <Grid item lg={3} className="slider_image">
+          <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageTwo} />
               </Grid>
-              <Grid item lg={6}></Grid>
-              <Grid item lg={3}>
+              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+              <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageOne} />
               </Grid>
               <div className="course_teacher">
