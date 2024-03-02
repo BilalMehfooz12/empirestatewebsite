@@ -1,17 +1,53 @@
+import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import { useState } from "react";
 import Footer from "../../Component/Footer";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import "./signup.css";
 import { toast } from "react-toastify";
 import { Button, InputLabel } from "@mui/material";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
+
 const SignUp = () => {
-  const handleSubmit = async (event) => {
-    window.location.href = "/requestCall";
-    // toast.success("Our Team Contact You As Soon As Possible Thank You!", {
-    //   position: "top-center",
-    // });
+  const [loading, setLoading] = useState(false);
+  const [selectedData, setSelectedData] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const formData = new FormData(e.target);
+    formData.append("submitFrom", window.location.href);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/empirestatetechsolutions@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (response.ok) {
+        setLoading(false);
+        e.target.reset(); // Reset the form after successful submission
+        setSelectedData("");
+
+        // Redirect to thank you page
+        window.location.href = "https://empirestatewebsite.vercel.app/thank";
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setLoading(false);
+    }
+  };
+  const handleChange = (e) => {
+    setSelectedData(e.target.value);
   };
   return (
     <div>
@@ -21,8 +57,6 @@ const SignUp = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <form
-            action="https://formsubmit.co/empirestatetechsolutions@gmail.com
-   "
             onSubmit={handleSubmit}
             method="POST"
             // class=" p-4 p-md-5 contact-form"
@@ -66,12 +100,21 @@ const SignUp = () => {
               <br></br>
               <Grid item lg={12} className="register_input_filed">
                 <p>Courses</p>
-                <Select style={{ width: "100%" }} displayEmpty>
+                <Select
+                  value={selectedData}
+                  onChange={handleChange}
+                  name="Select Course"
+                  style={{ width: "100%", textAlign: "start" }}
+                  displayEmpty
+                  required
+                  inputProps={{ "aria-label": "Select Email" }}
+                >
                   {/* <InputLabel disabled hidden style={{ textAlign: "start" }}>
                     Select Course
                   </InputLabel> */}
-
-                  <MenuItem value="scrum">Scrum</MenuItem>
+                  <MenuItem className="hover_couse_time" value="scrum">
+                    Scrum
+                  </MenuItem>
                 </Select>
               </Grid>
               <Grid item lg={12} className="register_input_filed">
@@ -104,7 +147,22 @@ const SignUp = () => {
                   }}
                 >
                   <button id="contact_btn_home_page" type="submit">
-                    Register Now
+                    {loading ? (
+                      <Box
+                        sx={{
+                          display: "flex",
+                          width: "100%",
+                          // padding: "2% 4%",
+                          height: "4.5vh",
+                        }}
+                      >
+                        <CircularProgress
+                          sx={{ color: "white", height: "10px", width: "100%" }}
+                        />
+                      </Box>
+                    ) : (
+                      "Register Now"
+                    )}
                   </button>
                 </div>
               </Grid>

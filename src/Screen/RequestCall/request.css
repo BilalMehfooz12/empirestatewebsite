@@ -54,3 +54,7 @@ font-family: var(--fontFamily);
     border-radius: 3px;
     height: 12vh;
 }
+.hover_couse_time:hover{
+background-color: var(--color) !important;
+color: white !important;
+}

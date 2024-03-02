@@ -217,7 +217,7 @@ const Header = () => {
                       className="centered-text"
                     >
                       +1(347)593-5383<br></br>{" "}
-                      empirestatetecksolutions@gmail.com
+                      empirestatetechsolutions@gmail.com
                     </Grid>
                   </Grid>
                 </Grid>
