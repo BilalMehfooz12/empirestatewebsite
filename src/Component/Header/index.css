@@ -120,7 +120,17 @@ height: auto
   
 }
 @media (max-width:550px){
-  
+  .centered-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    padding-left: 2%;
+    color: var(--color);
+    font-weight: bold;
+    height: 100%; /* Ensure the height of the parent container is set */
+    margin: 0; /* Remove default margin */
+  }
 .logo_img{
   width:90%;
   height:10vh;
@@ -130,9 +140,9 @@ height: auto
 }
 .login_btn{
 display: flex !important;
-justify-content: center !important;
+justify-content: start !important;
   margin-bottom: 10% !important;
-  margin-left: 30% !important;
+  margin-left: 0% !important;
 }
 }
 .header_child_bg{

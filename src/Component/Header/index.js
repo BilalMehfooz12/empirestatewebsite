@@ -10,10 +10,20 @@ import logo from "../../Image/logo6.png";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink, HashLink as link } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./index.css";
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
   return (
     <div className="header_sticky" style={{ height: "14vh" }}>
       <div class="navbar navbar-expand-lg navbar-light ">
@@ -32,10 +42,15 @@ const Header = () => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={toggleNav}
+            aria-expanded={isNavOpen ? "true" : "false"}
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
+            id="navbarSupportedContent"
+          >
             <Container className="header_child_bg">
               <Grid container className="main_headers" gap={2}>
                 <Grid item lg={1.8} md={2} sm={2} xs={12}>
@@ -91,6 +106,7 @@ const Header = () => {
                     backgroundColor:
                       location.pathname === "/" ? "rgb(4, 38, 48)" : "white",
                   }}
+                  onClick={closeNav}
                 >
                   <p className="centered-text">
                     <Link
@@ -114,6 +130,7 @@ const Header = () => {
                   md={1}
                   sm={1}
                   xs={12}
+                  onClick={closeNav}
                   style={{
                     backgroundColor:
                       location.pathname === "/aboutus"
@@ -143,6 +160,7 @@ const Header = () => {
                   md={1}
                   sm={1}
                   xs={12}
+                  onClick={closeNav}
                   style={{
                     backgroundColor:
                       location.pathname === "/courses"
@@ -173,6 +191,7 @@ const Header = () => {
                   md={1.2}
                   sm={1.5}
                   xs={12}
+                  onClick={closeNav}
                   style={{
                     backgroundColor:
                       location.pathname === "/contact"
@@ -238,6 +257,7 @@ const Header = () => {
                   md={2}
                   sm={3}
                   xs={12}
+                  onClick={closeNav}
                   style={{ display: "flex", alignItems: "center" }}
                 >
                   <Button

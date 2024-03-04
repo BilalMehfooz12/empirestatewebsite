@@ -33,6 +33,11 @@ top: 90%;
     /* margin :10% !important; */
     /* margin-bottom: 10% !important; */
 }
+.request_heading{
+  margin: 10px;
+  background-color: rgb(50, 186, 2);
+  padding: 4%;
+}
 @media (max-width: 1400px) and (min-width: 700px) {
 .scroll-to-top {
     position: fixed;
@@ -44,8 +49,11 @@ top: 90%;
 @media (max-width:600px){
   .scroll-to-top {
     position: fixed;
-    right:40%;
+    right:0.5%;
 top: 93%;
     z-index: 999 !important;
+  }
+  .request_heading{
+    display: none;
   }
 }

@@ -58,8 +58,7 @@ const ScrollToTop = () => {
             /> */}
           </div>
         )}
-        {/* {reuestisVisible && ( */}
-        //{" "}
+        {/* {reuestisVisible && ( */}{" "}
         <div className="scroll-icon">
           <div
             style={{
@@ -68,13 +67,7 @@ const ScrollToTop = () => {
             }}
             onClick={() => navigate("/requestCall")}
           >
-            <h4
-              style={{
-                margin: 10,
-                backgroundColor: "rgb(50, 186, 2)",
-                padding: "4%",
-              }}
-            >
+            <h4 className="request_heading">
               <span style={{ marginRight: "0.5em" }}>Request</span>
               <span style={{ marginRight: "0.5em" }}>a</span>
               <span style={{ marginRight: "0.5em" }}>Call</span>
@@ -83,8 +76,7 @@ const ScrollToTop = () => {
             <div className="what_app_icon_main">
               <PhoneEnabledIcon className="what_app_icon" />
             </div>
-          </div>
-          //{" "}
+          </div>{" "}
         </div>
         {/* )} */}
       </div>

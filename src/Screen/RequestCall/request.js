@@ -240,14 +240,21 @@ const RequestCall = () => {
                   value={selectedData}
                   onChange={handleChange}
                   name="Selected Time"
-                  style={{ width: "100%", textAlign: "start", height: "4vh" }}
+                  style={{
+                    width: "100%",
+                    textAlign: "start",
+                    height: "5vh",
+                    border: "2px solid rgb(0,134,173)",
+                    outline: "none", // Remove this line
+                    textDecoration: "none",
+                  }}
                   displayEmpty
                   required
                   inputProps={{ "aria-label": "Select Email" }}
                 >
-                  {/* <InputLabel disabled hidden style={{ textAlign: "start" }}>
-                    Select Course
-                  </InputLabel> */}
+                  <MenuItem value="" disabled hidden>
+                    Select Course Time
+                  </MenuItem>
                   <MenuItem value="Morning" className="hover_couse_time">
                     Morning
                   </MenuItem>

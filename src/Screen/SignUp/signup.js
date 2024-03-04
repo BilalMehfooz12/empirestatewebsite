@@ -108,7 +108,10 @@ const SignUp = () => {
                 <Select
                   value={selectedData}
                   onChange={handleChange}
-                  name="Select Course"
+                  name="Course"
+                  displayEmpty
+                  required
+                  inputProps={{ "aria-label": "Select Email" }}
                   style={{
                     width: "100%",
                     textAlign: "start",
@@ -117,15 +120,15 @@ const SignUp = () => {
                     outline: "none", // Remove this line
                     textDecoration: "none",
                   }}
-                  displayEmpty
-                  required
-                  inputProps={{ "aria-label": "Select Email" }}
                 >
-                  {/* <InputLabel disabled hidden style={{ textAlign: "start" }}>
+                  <MenuItem value="" disabled hidden>
                     Select Course
-                  </InputLabel> */}
-                  <MenuItem className="hover_couse_time" value="scrum">
-                    Scrum
+                  </MenuItem>
+                  <MenuItem className="hover_couse_time" value="Scrum Master">
+                    Scrum Master
+                  </MenuItem>
+                  <MenuItem className="hover_couse_time" value="Scrum Master">
+                    SQA
                   </MenuItem>
                 </Select>
               </Grid>
