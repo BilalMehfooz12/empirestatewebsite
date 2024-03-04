@@ -29,7 +29,7 @@
     height: 42vh;
     /* margin-top: %; */
 }
-@media (max-width: 1400px) and (min-width: 700px) {
+@media (max-width: 1550px) and (min-width: 700px) {
     .about_main_height {
       display: flex !important;
       height: 55vh !important;
@@ -50,7 +50,7 @@
     }
     .about_image img{
         width: 100%;
-        height: 22vh !important;
+        height: 28vh !important;
     }
 }
 

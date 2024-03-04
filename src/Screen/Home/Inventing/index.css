@@ -63,7 +63,7 @@
     
 
   }
-  @media (max-width: 1050px) and (min-width: 860px)
+  @media (max-width: 1550px) and (min-width: 1200px)
 {
   .bg_we_zax{
     height: 29vh !important;
@@ -72,8 +72,7 @@
     width: 100%;
     margin-top: 2%;
     height: 26vh !important;
-    /* padding-top: 50%;
-    padding-bottom: 15%; */
+
   }
 }
   @media (max-width:840px) and (min-width:600px)

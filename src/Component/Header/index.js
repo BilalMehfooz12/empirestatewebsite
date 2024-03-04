@@ -5,7 +5,7 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../../Image/empirelogo5-removebg-preview.png";
+import logo from "../../Image/logo6.png";
 
 import { BrowserRouter } from "react-router-dom";
 import { HashLink, HashLink as link } from "react-router-hash-link";
@@ -38,7 +38,7 @@ const Header = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <Container className="header_child_bg">
               <Grid container className="main_headers" gap={2}>
-                <Grid item lg={2} md={2} sm={2} xs={12}>
+                <Grid item lg={1.8} md={2} sm={2} xs={12}>
                   <img src={logo} className="logo_img" />
                 </Grid>
                 {/* 
@@ -196,7 +196,14 @@ const Header = () => {
                     </Link>
                   </p>
                 </Grid>
-                <Grid item lg={3.2} md={4} sm={5.5} xs={12}>
+                <Grid
+                  item
+                  lg={3.2}
+                  md={4}
+                  sm={5.5}
+                  xs={12}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <Grid
                     container
                     style={{ display: "flex", alignItems: "center" }}
@@ -216,13 +223,23 @@ const Header = () => {
                       xs={10}
                       className="centered-text"
                     >
-                      +1(347)593-5383<br></br>{" "}
-                      empirestatetechsolutions@gmail.com
+                      <div>
+                        +1(347)593-5383<br></br>{" "}
+                        empirestatetechsolutions@gmail.com
+                      </div>
                     </Grid>
                   </Grid>
                 </Grid>
 
-                <Grid item xl={1.6} lg={1.6} md={2} sm={3} xs={12}>
+                <Grid
+                  item
+                  xl={1.6}
+                  lg={1.6}
+                  md={2}
+                  sm={3}
+                  xs={12}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <Button
                     className="login_btn"
                     onClick={() => navigate("/signUp")}

@@ -14,7 +14,7 @@ import linkedin from "../../Image/icon/linkedin.png";
 import twitter from "../../Image/icon/twitter.png";
 import insta from "../../Image/icon/insta.png";
 import facebook from "../../Image/icon/facebook.png";
-import logo from "../../Image/empirelogo5.jpg";
+import logo from "../../Image/logo6.png";
 import "./index.css";
 
 const Footer = () => {

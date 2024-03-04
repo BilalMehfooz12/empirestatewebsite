@@ -72,4 +72,9 @@
   .footer_bg_color {
     height: auto !important;
   }
+  .footer_logo{
+    width: 100%;
+    height: 20vh;
+  }
 }
+

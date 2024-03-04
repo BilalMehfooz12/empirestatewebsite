@@ -124,11 +124,15 @@ height: auto
 .logo_img{
   width:90%;
   height:10vh;
-  padding-top: 5%;
+  margin-top: -20%;
+  display: none !important;
+/* margin-top: -5%; */
 }
 .login_btn{
-  margin-top: 20% !important;
+display: flex !important;
+justify-content: center !important;
   margin-bottom: 10% !important;
+  margin-left: 30% !important;
 }
 }
 .header_child_bg{
