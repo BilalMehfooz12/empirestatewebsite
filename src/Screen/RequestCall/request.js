@@ -253,7 +253,7 @@ const RequestCall = () => {
                   inputProps={{ "aria-label": "Select Email" }}
                 >
                   <MenuItem value="" disabled hidden>
-                    Select Course Time
+                    Select
                   </MenuItem>
                   <MenuItem value="Morning" className="hover_couse_time">
                     Morning

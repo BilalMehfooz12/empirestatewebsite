@@ -80,16 +80,16 @@ const WebsiteFeatures = () => {
         </Grid>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Grid container maxWidth="lg" className="course_main">
-          <Grid item lg={11} md={11} sm={11} xs={11}>
+        <Grid
+          container
+          maxWidth="lg"
+          style={{ display: "flex", justifyContent: "center" }}
+          className="course_main"
+        >
+          <Grid item lg={11} md={11} sm={11} xs={8}>
             <h3>Courses</h3>
-            <p>
-              {" "}
-              We Offers best courses that assure to enhance and improve your
-              skill set. Choose and start to learn now.
-            </p>
           </Grid>
-          <Grid item lg={1} md={1} sm={11} xs={12}>
+          <Grid item lg={1} md={1} sm={11} xs={4}>
             <Button
               className="veiw_course_btn"
               onClick={() => navigate("/courses")}
@@ -97,6 +97,11 @@ const WebsiteFeatures = () => {
               View All
             </Button>
           </Grid>
+          <p style={{ textAlign: "center" }}>
+            {" "}
+            We Offers best courses that assure to enhance and improve your skill
+            set. Choose and start to learn now.
+          </p>
         </Grid>
       </div>
 

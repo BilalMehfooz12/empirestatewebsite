@@ -9,6 +9,9 @@
 font-family: var(--fontFamily);
 
 }
+#header_height{
+  height: 14vh;
+}
 .header_logo p {
   padding-top: 10px;
   padding-bottom: -10px;
@@ -131,6 +134,9 @@ height: auto
     font-weight: bold;
     height: 100%; /* Ensure the height of the parent container is set */
     margin: 0; /* Remove default margin */
+  }
+  #header_height{
+    height: 9vh;
   }
 .logo_img{
   width:90%;

@@ -83,4 +83,8 @@
     .conatact_image{
       display: none;
     }
+    .contact_form{
+      margin-top: -10% !important;
+      margin-bottom: 10% !important;
+    }
   }

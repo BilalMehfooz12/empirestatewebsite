@@ -175,7 +175,7 @@ const Courses = () => {
           <Grid item lg={3.5} xs={12}>
             <h1>Courses</h1>
           </Grid>
-          <Grid item lg={3}>
+          <Grid item lg={3} className="Search_btn_hidden">
             <br></br>
             <br></br>
             <TextField

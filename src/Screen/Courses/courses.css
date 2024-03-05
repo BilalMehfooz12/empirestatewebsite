@@ -63,6 +63,9 @@
 
 @media (max-width:600px){
   .courses_images{
-    margin-top: 8% !important;
+    /* margin-top: 3% !important; */
+  }
+  .Search_btn_hidden{
+    display: none;
   }
 }

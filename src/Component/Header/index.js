@@ -25,7 +25,7 @@ const Header = () => {
     setIsNavOpen(false);
   };
   return (
-    <div className="header_sticky" style={{ height: "14vh" }}>
+    <div className="header_sticky" id="header_height" >
       <div class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           {/* <img

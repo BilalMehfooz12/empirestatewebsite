@@ -151,4 +151,7 @@ background-color: rgb(26, 174, 219) !important;
     margin: 0.5% 0%;
     font-size: 16px;
   }  
+  .veiw_course_btn{
+    margin-bottom: 5% !important;
+  }
 }
