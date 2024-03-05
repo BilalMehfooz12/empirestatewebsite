@@ -79,4 +79,8 @@
       border-radius: 50%;
       height: auto;
   } */
-  
+  @media (max-width:550px){
+    .conatact_image{
+      display: none;
+    }
+  }

@@ -24,7 +24,7 @@ const AboutUs = () => {
           </Grid>
         </Grid>
       </Container>
-      <Footer />
+      <Footer className="footer_about" />
     </div>
   );
 };

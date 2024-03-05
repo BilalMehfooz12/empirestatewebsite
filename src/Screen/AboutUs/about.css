@@ -2,8 +2,11 @@
     padding-top: 3%;
     
 }
+.footer_about{
+    display: none !important;
+}
 .about_main_height{
-    height: 55vh !important;
+    height: 53.5vh !important;
     display: flex !important;
     align-items: center !important;
 }
@@ -29,7 +32,8 @@
     height: 42vh;
     /* margin-top: %; */
 }
-@media (max-width: 1550px) and (min-width: 700px) {
+@media (max-width: 1200px) and (min-width: 1000px) {
+
     .about_main_height {
       display: flex !important;
       height: 55vh !important;
@@ -42,7 +46,7 @@
   }
   
 
-@media (max-width:800px) and (min-width:600px){
+@media (max-width:990px) and (min-width:600px){
     .about_main_height{
         height: 50vh !important;
         display: flex !important;

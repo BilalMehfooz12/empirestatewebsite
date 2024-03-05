@@ -63,7 +63,7 @@ const ContactUs = () => {
                 href="#footer"
                 value="https://empirestatewebsite.vercel.app/thank"
               />
-              <h4>Dropsdas Your Message Here</h4>
+              <h4>Drop Your Message Here</h4>
               <label>Name</label>
               <br></br>
               <input type="name" name="Name" required autoComplete="off" />

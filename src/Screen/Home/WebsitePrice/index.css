@@ -58,4 +58,7 @@ font-size: 18px;
     #webinar_bottom{
         padding-bottom: 10%;
     } 
+    .webinar_bg{
+        display: none;
+    }
 }

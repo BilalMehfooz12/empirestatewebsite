@@ -35,6 +35,7 @@ font-family: var(--fontFamily);
   height:6vh;
   display: flex !important;
   align-items: center !important;
+  margin-top: 2%;
 }
 .centered-text {
   display: flex;

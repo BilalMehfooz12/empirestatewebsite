@@ -61,7 +61,8 @@
   }
    */
 .contact_us_height{
-  height: 84vh;
+  height: auto;
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }

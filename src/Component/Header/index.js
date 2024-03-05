@@ -258,7 +258,11 @@ const Header = () => {
                   sm={3}
                   xs={12}
                   onClick={closeNav}
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginTop: "-0.6%",
+                  }}
                 >
                   <Button
                     className="login_btn"

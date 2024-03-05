@@ -14,7 +14,7 @@ import linkedin from "../../Image/icon/linkedin.png";
 import twitter from "../../Image/icon/twitter.png";
 import insta from "../../Image/icon/insta.png";
 import facebook from "../../Image/icon/facebook.png";
-import logo from "../../Image/logo6.png";
+import logo from "../../Image/logofooter-removebg-preview.png";
 import "./index.css";
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
     <div className="footer_bg_color">
       <Container>
         <Grid container className="footer_main" columnSpacing={3}>
-          <Grid item lg={3} md={3} sm={5} xs={12} className="footer_services">
+          <Grid item lg={3} md={2.5} sm={5} xs={12} className="footer_services">
             <img src={logo} className="footer_logo" />
 
             <p style={{ marginTop: "6%" }}>
@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
           </Grid>
 
-          <Grid item lg={2} md={3} sm={5} xs={12} className="footer_services">
+          <Grid item lg={2} md={2.5} sm={5} xs={12} className="footer_services">
             <h2>Services</h2>
             <p>Skilled Trainers</p>
             <p>Live & Interactive</p>
@@ -40,7 +40,7 @@ const Footer = () => {
           <Grid
             item
             lg={2.5}
-            md={3}
+            md={2.5}
             sm={5}
             xs={12}
             style={{ cursor: "pointer" }}
@@ -52,7 +52,14 @@ const Footer = () => {
             <p onClick={() => naviagte("/courses")}>Courses</p>
             <p onClick={() => naviagte("/contact")}>Contact Us</p>
           </Grid>
-          <Grid item lg={2.5} md={3} sm={5} xs={12} className="footer_services">
+          <Grid
+            item
+            lg={2.5}
+            md={3.5}
+            sm={5}
+            xs={12}
+            className="footer_services"
+          >
             <h2>Contact Us</h2>
             <Grid container>
               <Grid item lg={2} xs={1}>
