@@ -11,18 +11,21 @@ import SearchIcon from "@mui/icons-material/Search";
 import CouserOne from "../../Image/courserImageOne.png";
 import CouserTwo from "../../Image/courseTwo.png";
 import CouserThree from "../../Image/courseThree.png";
-import CouserFour from "../../Image/courseFour.png";
+import CouserFour from "../../Image/sqateacher.jpg";
+import femaleIcon from "../../Image/female.icon.png";
 import "./courses.css";
 import { useState } from "react";
 const Courses = () => {
   const obj = [
     {
       imageRole: CouserOne,
+      role: "Software Quality Assurance",
+      levelCourse: "Beginner to Advance",
+      name: "Jaffar Zahid",
       tecknology: "Tecnology",
-      application: "Aplication Support",
+      application: "IT Software",
       icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+      image: CouserFour,
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
@@ -31,109 +34,112 @@ const Courses = () => {
       imageRole: CouserOne,
 
       tecknology: "React",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
-      tecknology: "Devops",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
-      tecknology: "Scrum",
-      application: "Aplication Support",
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-      icon: <AccessTimeIcon />,
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
+      role: "Scrum Master",
+      levelCourse: "Beginner to Advance",
+      name: "Samiya Khalid",
       tecknology: "Tecnology",
-      application: "Aplication Support",
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
+      application: "IT Software",
       icon: <AccessTimeIcon />,
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
-      tecknology: "React",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+      image: femaleIcon,
 
       hour: "2 Hour",
       iconLevel: <SignalCellularAltIcon />,
       level: "Beginner",
     },
-    {
-      imageRole: CouserOne,
-      tecknology: "Devops",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "Devops",
+    //   application: "Aplication Support",
+    //   icon: <AccessTimeIcon />,
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "Scrum",
+    //   application: "Aplication Support",
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
 
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
-      tecknology: "Tecnology",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
-      tecknology: "React",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+    //   icon: <AccessTimeIcon />,
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "Tecnology",
+    //   application: "Aplication Support",
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
 
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
-    {
-      imageRole: CouserOne,
-      tecknology: "Devops",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+    //   icon: <AccessTimeIcon />,
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "React",
+    //   application: "Aplication Support",
+    //   icon: <AccessTimeIcon />,
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
 
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-    },
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "Devops",
+    //   application: "Aplication Support",
+    //   icon: <AccessTimeIcon />,
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "Tecnology",
+    //   application: "Aplication Support",
+    //   icon: <AccessTimeIcon />,
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "React",
+    //   application: "Aplication Support",
+    //   icon: <AccessTimeIcon />,
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
+    // {
+    //   imageRole: CouserOne,
+    //   tecknology: "Devops",
+    //   application: "Aplication Support",
+    //   icon: <AccessTimeIcon />,
+    //   image:
+    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
+
+    //   hour: "2 Hour",
+    //   iconLevel: <SignalCellularAltIcon />,
+    //   level: "Beginner",
+    // },
   ];
   const [inpputSearch, setInputSearch] = useState("");
   const [page, setPage] = React.useState(1);
@@ -175,7 +181,7 @@ const Courses = () => {
           <Grid item lg={3.5} xs={12}>
             <h1>Courses</h1>
           </Grid>
-          <Grid item lg={3} className="Search_btn_hidden">
+          {/* <Grid item lg={3} className="Search_btn_hidden">
             <br></br>
             <br></br>
             <TextField
@@ -193,11 +199,16 @@ const Courses = () => {
                 ),
               }}
             />
-          </Grid>
+          </Grid> */}
         </Grid>
 
         <Container>
-          <Grid container spacing={3} className="courses_images">
+          <Grid
+            container
+            style={{ display: "flex", justifyContent: "center" }}
+            spacing={3}
+            className="courses_images"
+          >
             {filterData.map((item) => {
               return (
                 <Grid
@@ -222,10 +233,10 @@ const Courses = () => {
                     </Grid>
                     <div className="course_teacher">
                       <p>
-                        Application Security Testing For<br></br> Absolute
-                        Beginners
+                        {item.role} <br></br> For<br></br>
+                        {item.levelCourse}
                       </p>
-                      <b>By Sir Haris</b>
+                      <b>By {item.name}</b>
                     </div>
                   </Grid>
                   <p style={{ textAlign: "start", margin: "0%" }}>

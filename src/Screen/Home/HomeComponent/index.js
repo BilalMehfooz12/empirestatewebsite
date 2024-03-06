@@ -10,7 +10,7 @@ const HomeComponent = () => {
     <div>
       <Inventing />
       <WebsiteFeatures />
-      <WebsitePrice />
+      {/* <WebsitePrice /> */}
       <ContactUs />
       {/* <Project /> */}
       {/* <Industries /> */}
