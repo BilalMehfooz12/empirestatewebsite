@@ -11,7 +11,7 @@
 }
 .heading_services{
     text-align:start;
-}
+} 
 .course_image{
   background-image: linear-gradient(to bottom left, rgba(0,134,173,0.5) 0%, rgba(0,134,173,1) 100%);
 margin-bottom: 6%;
@@ -25,7 +25,7 @@ padding: 1%;
   padding-bottom: 2% !important;
   margin: 0% !important;
 }
-.course_image img{
+.teacher_course_image {
 width: 8%;
 height: 7vh;
 border-radius: 50%;

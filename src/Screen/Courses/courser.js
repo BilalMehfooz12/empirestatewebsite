@@ -8,7 +8,8 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { InputAdornment, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import CouserOne from "../../Image/courserImageOne.png";
+import CouserOne from "../../Image/sqaicon.jpg";
+import Cousertwo from "../../Image/scrumicon.webp";
 import CouserTwo from "../../Image/courseTwo.png";
 import CouserThree from "../../Image/courseThree.png";
 import CouserFour from "../../Image/sqateacher.jpg";
@@ -31,7 +32,7 @@ const Courses = () => {
       level: "Beginner",
     },
     {
-      imageRole: CouserOne,
+      imageRole: Cousertwo,
 
       tecknology: "React",
       role: "Scrum Master",
@@ -224,19 +225,32 @@ const Courses = () => {
                   <Grid container className="course_image">
                     <Grid item lg={3} md={3} sm={3} xs={3}>
                       {/* <SignalCellularAltIcon /> */}
-                      <img src={item.image} />
+                      <img src={item.image} className="teacher_course_image" />
                     </Grid>
                     <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-                    <Grid item lg={3} md={3} sm={3} xs={3}>
-                      <img src={item.imageRole} />
+                    <Grid
+                      item
+                      lg={3}
+                      md={3}
+                      sm={3}
+                      xs={3}
+                      style={{ padding: "1%" }}
+                    >
+                      <img
+                        src={item.imageRole}
+                        style={{ width: "100%", height: "5vh" }}
+                      />
                       {/* <SignalCellularAltIcon /> */}
                     </Grid>
                     <div className="course_teacher">
                       <p>
-                        {item.role} <br></br> For<br></br>
-                        {item.levelCourse}
+                        <b>
+                          {item.role} <br></br> For<br></br>
+                          {item.levelCourse}
+                          <br></br>
+                          By {item.name}
+                        </b>
                       </p>
-                      <b>By {item.name}</b>
                     </div>
                   </Grid>
                   <p style={{ textAlign: "start", margin: "0%" }}>
@@ -244,7 +258,7 @@ const Courses = () => {
                   </p>
                   <h5 style={{ textAlign: "start" }}>{item.application}</h5>
                   <Grid container className="slider_content_main">
-                    <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+                    <Grid item lg={1} md={0.8} sm={0.5} xs={1}>
                       {item.icon}
                     </Grid>
                     <Grid
@@ -255,22 +269,26 @@ const Courses = () => {
                       xs={3}
                       className="slider_content"
                     >
-                      <label>{item.hour}</label>
+                      <label>
+                        <b> {item.hour}</b>
+                      </label>
                     </Grid>
-                    <Grid item lg={3.5} md={7} sm={6} xs={5}></Grid>
-                    <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+                    <Grid item lg={1} md={4} sm={2.5} xs={3.2}></Grid>
+                    <Grid item lg={1} md={1} sm={1} xs={1}>
                       {/* <SignalCellularAltIcon /> */}
                       {item.iconLevel}
                     </Grid>
                     <Grid
                       item
-                      lg={2.5}
-                      md={1}
-                      sm={1.5}
-                      xs={1.5}
+                      lg={6}
+                      md={3}
+                      sm={4.5}
+                      xs={3.8}
                       className="slider_content"
                     >
-                      <label>{item.level}</label>
+                      <label>
+                        <b> {item.levelCourse}</b>
+                      </label>
                     </Grid>
                   </Grid>
                 </Grid>

@@ -19,8 +19,9 @@ import CouserFour from "../../../Image/courseFour.png";
 import serviceOne from "../../../Image/service1.png";
 import serviceTwo from "../../../Image/service2.png";
 import serviceThree from "../../../Image/service3.png";
-import couserImageOne from "../../../Image/courserImageOne.png";
+import couserImageOne from "../../../Image/sqaicon.jpg";
 import couserImageTwo from "../../../Image/sqateacher.jpg";
+import scrumicon from "../../../Image/scrumicon.webp";
 import femaleIcon from "../../../Image/female.icon.png";
 
 const WebsiteFeatures = () => {
@@ -555,82 +556,95 @@ const WebsiteFeatures = () => {
           <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
               <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageTwo} />
+                <img src={couserImageTwo} className="teacher_course_image" />
               </Grid>
               <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageOne} />
+              <Grid item lg={3} md={3} sm={3} xs={3} style={{ padding: "1%" }}>
+                <img
+                  src={couserImageOne}
+                  style={{ width: "100%", height: "5vh" }}
+                />
               </Grid>
               <div className="course_teacher">
                 <p>
-                  Software Quality Assurance For<br></br> Beginner to Advance
+                  <b>
+                    {" "}
+                    Software Quality Assurance For<br></br> Beginner to Advance
+                    <br></br>
+                    By Jaffar Zahid
+                  </b>
                 </p>
-                <b>By Jaffar Zahid</b>
               </div>
             </Grid>
             <p>Tecnology</p>
             <h5>IT Software</h5>
             <Grid container className="slider_content_main">
-              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+              <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
                 <AccessTimeIcon />
               </Grid>
               <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
-                <label>2 Hour</label>
+                <label>
+                  <b> 2 Hour</b>
+                </label>
               </Grid>
-              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
-              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+              <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
+              <Grid item lg={1.5} md={1} sm={1} xs={1}>
                 <SignalCellularAltIcon />
               </Grid>
               <Grid
                 item
-                lg={3}
-                md={1}
-                sm={1.5}
-                xs={1.5}
+                lg={5}
+                md={3}
+                sm={4}
+                xs={3.8}
                 className="slider_content"
               >
-                <label>Beginner</label>
+                <label>Beginner to Advance</label>
               </Grid>
             </Grid>
           </Grid>
           <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
               <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={femaleIcon} />
+                <img src={femaleIcon} className="teacher_course_image" />
               </Grid>
               <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageOne} />
+              <Grid item lg={3} md={3} sm={3} xs={3} style={{ padding: "1%" }}>
+                <img src={scrumicon} style={{ width: "100%", height: "5vh" }} />
               </Grid>
               <div className="course_teacher">
                 <p>
-                  Scrum Master For<br></br> Beginner to Advance
+                  <b>
+                    Scrum Master For<br></br> Beginner to Advance<br></br>
+                    By Samiya Khalid
+                  </b>
                 </p>
-                <b>By Samiya Khalid</b>
               </div>
             </Grid>
             <p>Tecnology</p>
             <h5>IT Software</h5>
             <Grid container className="slider_content_main">
-              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
+              <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
                 <AccessTimeIcon />
               </Grid>
               <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
-                <label>2 Hour</label>
+                <label>
+                  <b> 2 Hour</b>
+                </label>
               </Grid>
-              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
-              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
+              <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
+              <Grid item lg={1.5} md={1} sm={1} xs={1}>
                 <SignalCellularAltIcon />
               </Grid>
               <Grid
                 item
-                lg={3}
-                md={1}
-                sm={1.5}
-                xs={1.5}
+                lg={5}
+                md={3}
+                sm={4}
+                xs={3.8}
                 className="slider_content"
               >
-                <label>Beginner</label>
+                <label>Beginner to Advance</label>
               </Grid>
             </Grid>
           </Grid>
