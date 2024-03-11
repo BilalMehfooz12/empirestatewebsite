@@ -14,7 +14,7 @@ import linkedin from "../../Image/icon/linkedin.png";
 import twitter from "../../Image/icon/twitter.png";
 import insta from "../../Image/icon/insta.png";
 import facebook from "../../Image/icon/facebook.png";
-import logo from "../../Image/logofooter-removebg-preview.png";
+import logo from "../../Image/empire-state-new-logo-2.png";
 import "./index.css";
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
           </Grid>
 
           <Grid item lg={2} md={2.5} sm={5} xs={12} className="footer_services">
-            <h2>Services</h2>
+            <h4>Services</h4>
             <p>Skilled Trainers</p>
             <p>Live & Interactive</p>
             <p>Convenient & Remote</p>
@@ -46,7 +46,7 @@ const Footer = () => {
             style={{ cursor: "pointer" }}
             className="footer_services"
           >
-            <h2>Important Link</h2>
+            <h4>Important Link</h4>
             <p>Home</p>
             <p onClick={() => naviagte("/aboutus")}>About</p>
             <p onClick={() => naviagte("/courses")}>Courses</p>
@@ -60,7 +60,7 @@ const Footer = () => {
             xs={12}
             className="footer_services"
           >
-            <h2>Contact Us</h2>
+            <h4>Contact Us</h4>
             <Grid container>
               <Grid item lg={2} xs={1}>
                 <EmailIcon />

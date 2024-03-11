@@ -13,6 +13,21 @@
   /* overflow-y: scroll; */
   margin-top: 0.1% !important;
 }
+.model_text{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 2%;
+  font-family: var(--fontFamily);
+}
+.model_text p{
+padding-top: 2%;
+}
+.model_close_btn{
+  font-size: 20px;
+}
 
 /* For WebKit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {

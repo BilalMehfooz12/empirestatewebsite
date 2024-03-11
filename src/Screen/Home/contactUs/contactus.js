@@ -7,9 +7,10 @@ import Box from "@mui/material/Box";
 import contactImage from "../../../Image/contact_image_2.jpg";
 import Footer from "../../../Component/Footer";
 import { toast } from "react-toastify";
-
+import { useNavigate } from "react-router-dom";
 import "./contact.css";
 const ContactUs = () => {
+  const naviate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -45,7 +46,16 @@ const ContactUs = () => {
 
   return (
     <div className="bg_contact">
-      <Container>
+      <div style={{ display: "flex", justifyContent: "end", padding: "2%" }}>
+        <Button
+          id="learn_now_btn"
+          style={{ padding: "1% 1%" }}
+          onClick={() => naviate("/requestCall")}
+        >
+          <b> Schedule A Call Back</b>
+        </Button>
+      </div>
+      {/* <Container>
         <Grid container className="main_contact" gap={5}>
           <Grid item lg={5} xs={12} className="conatact_image">
             <img src={contactImage} />
@@ -105,8 +115,8 @@ const ContactUs = () => {
             </form>
           </Grid>
         </Grid>
-      </Container>
-      <Footer />
+      </Container> */}
+      {/* <Footer /> */}
     </div>
   );
 };

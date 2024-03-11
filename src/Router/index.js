@@ -14,7 +14,7 @@ function Router() {
     <div>
       <BrowserRouter>
         <Header />
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<HomeComponent />} />
           <Route path="/aboutus" element={<AboutUs />} />
@@ -24,7 +24,7 @@ function Router() {
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/thank" element={<Thanks />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

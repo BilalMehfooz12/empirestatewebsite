@@ -29,14 +29,15 @@
   text-align: start !important;
   font-family: var(--fontFamily);
 }
-.footer_services h2 {
+.footer_services h4 {
   margin-bottom: 5%;
   text-align: start;
 }
 .footer_services p {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0%;
   padding: 0%;
+
 }
 .footer_logo p {
   font-size: 18px;

@@ -81,33 +81,42 @@ const WebsiteFeatures = () => {
           </Grid>
         </Grid>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <Grid
-          container
-          maxWidth="lg"
-          style={{ display: "flex", justifyContent: "center" }}
-          className="course_main"
+      <div style={{ backgroundColor: "rgb(230, 246, 250)" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
         >
-          <Grid item lg={11} md={11} sm={11} xs={8}>
-            <h3>Courses</h3>
+          <Grid
+            container
+            maxWidth="lg"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+            className="course_main"
+          >
+            <Grid item lg={11} md={11} sm={11} xs={8}>
+              <h3>Courses</h3>
+            </Grid>
+            <Grid item lg={1} md={1} sm={11} xs={4}>
+              <Button
+                className="veiw_course_btn"
+                onClick={() => navigate("/courses")}
+              >
+                View All
+              </Button>
+            </Grid>
+            <p style={{ textAlign: "center" }}>
+              {" "}
+              We Offers best courses that assure to enhance and improve your
+              skill set. Choose and start to learn now.
+            </p>
           </Grid>
-          <Grid item lg={1} md={1} sm={11} xs={4}>
-            <Button
-              className="veiw_course_btn"
-              onClick={() => navigate("/courses")}
-            >
-              View All
-            </Button>
-          </Grid>
-          <p style={{ textAlign: "center" }}>
-            {" "}
-            We Offers best courses that assure to enhance and improve your skill
-            set. Choose and start to learn now.
-          </p>
-        </Grid>
-      </div>
+        </div>
 
-      {/* <div style={{ display: "flex", justifyContent: "center" }}>
+        {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <Grid container maxWidth="lg">
           <Swiper
             slidesPerView={1}
@@ -546,109 +555,225 @@ const WebsiteFeatures = () => {
         </Grid>
       </div> */}
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <Grid
-          container
-          spacing={3}
-          maxWidth="lg"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
-          <Grid item lg={3} sm={6} className="slider_image">
-            <Grid container className="course_image">
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageTwo} className="teacher_course_image" />
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Grid
+            container
+            spacing={3}
+            maxWidth="lg"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Grid item lg={3} sm={6} className="slider_image">
+              <Grid container className="course_image">
+                <Grid item lg={3} md={3} sm={3} xs={3}>
+                  <img src={femaleIcon} className="teacher_course_image" />
+                </Grid>
+                <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+                <Grid
+                  item
+                  lg={3}
+                  md={3}
+                  sm={3}
+                  xs={3}
+                  style={{ padding: "1%" }}
+                >
+                  <img
+                    src="https://www.projectmanagementexperts.com/wp-content/uploads/2023/04/2648755022.jpg"
+                    style={{ width: "100%", height: "5vh" }}
+                  />
+                </Grid>
+                <div className="course_teacher" style={{ width: "100%" }}>
+                  <p>
+                    <b>
+                      Scrum Master <br></br>For Beginner to Advance<br></br>
+                      By Samiya Khalid
+                    </b>
+                  </p>
+                </div>
               </Grid>
-              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3} style={{ padding: "1%" }}>
-                <img
-                  src={couserImageOne}
-                  style={{ width: "100%", height: "5vh" }}
-                />
-              </Grid>
-              <div className="course_teacher">
-                <p>
-                  <b>
-                    {" "}
-                    Software Quality Assurance For<br></br> Beginner to Advance
-                    <br></br>
-                    By Jaffar Zahid
-                  </b>
-                </p>
-              </div>
-            </Grid>
-            <p>Tecnology</p>
-            <h5>IT Software</h5>
-            <Grid container className="slider_content_main">
-              <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
-                <AccessTimeIcon />
-              </Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
-                <label>
-                  <b> 2 Hour</b>
-                </label>
-              </Grid>
-              <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
-              <Grid item lg={1.5} md={1} sm={1} xs={1}>
-                <SignalCellularAltIcon />
-              </Grid>
-              <Grid
-                item
-                lg={5}
-                md={3}
-                sm={4}
-                xs={3.8}
-                className="slider_content"
-              >
-                <label>Beginner to Advance</label>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item lg={3} sm={6} className="slider_image">
-            <Grid container className="course_image">
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={femaleIcon} className="teacher_course_image" />
-              </Grid>
-              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3} style={{ padding: "1%" }}>
-                <img src={scrumicon} style={{ width: "100%", height: "5vh" }} />
-              </Grid>
-              <div className="course_teacher">
-                <p>
-                  <b>
-                    Scrum Master For<br></br> Beginner to Advance<br></br>
-                    By Samiya Khalid
-                  </b>
-                </p>
-              </div>
-            </Grid>
-            <p>Tecnology</p>
-            <h5>IT Software</h5>
-            <Grid container className="slider_content_main">
-              <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
-                <AccessTimeIcon />
-              </Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
-                <label>
-                  <b> 2 Hour</b>
-                </label>
-              </Grid>
-              <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
-              <Grid item lg={1.5} md={1} sm={1} xs={1}>
-                <SignalCellularAltIcon />
-              </Grid>
-              <Grid
-                item
-                lg={5}
-                md={3}
-                sm={4}
-                xs={3.8}
-                className="slider_content"
-              >
-                <label>Beginner to Advance</label>
+              <p>Tecnology</p>
+              <h5>IT Software</h5>
+              <Grid container className="slider_content_main">
+                <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
+                  <AccessTimeIcon />
+                </Grid>
+                <Grid
+                  item
+                  lg={2}
+                  md={3}
+                  sm={3}
+                  xs={3}
+                  className="slider_content"
+                >
+                  <label>
+                    <b> 2 Hour</b>
+                  </label>
+                </Grid>
+                <Grid item lg={2.5} md={1} sm={1} xs={1}>
+                  <SignalCellularAltIcon />
+                </Grid>
+                <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
+
+                <Grid
+                  item
+                  lg={5}
+                  md={3}
+                  sm={4}
+                  xs={3.8}
+                  className="slider_content"
+                >
+                  <Button
+                    id="learn_now_btn"
+                    onClick={() => navigate("/courses")}
+                  >
+                    Learn Now
+                  </Button>
+                  {/* <label>Beginner to Advance</label> */}
+                </Grid>
               </Grid>
             </Grid>
-          </Grid>
-          {/* <Grid item lg={3} sm={6} className="slider_image">
+            <Grid item lg={3} sm={6} className="slider_image">
+              <Grid container className="course_image">
+                <Grid item lg={3} md={3} sm={3} xs={3}>
+                  <img src={couserImageTwo} className="teacher_course_image" />
+                </Grid>
+                <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+                <Grid
+                  item
+                  lg={3}
+                  md={3}
+                  sm={3}
+                  xs={3}
+                  style={{ padding: "1%" }}
+                >
+                  <img
+                    src={couserImageOne}
+                    style={{ width: "100%", height: "5vh" }}
+                  />
+                </Grid>
+                <div className="course_teacher" style={{ width: "100%" }}>
+                  <p>
+                    <b>
+                      {" "}
+                      Software Quality Assurance <br></br> For Beginner to
+                      Advance
+                      <br></br>
+                      By Jaffar Zahid
+                    </b>
+                  </p>
+                </div>
+              </Grid>
+              <p>Tecnology</p>
+              <h5>IT Software</h5>
+              <Grid container className="slider_content_main">
+                <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
+                  <AccessTimeIcon />
+                </Grid>
+                <Grid
+                  item
+                  lg={2}
+                  md={3}
+                  sm={3}
+                  xs={3}
+                  className="slider_content"
+                >
+                  <label>
+                    <b> 2 Hour</b>
+                  </label>
+                </Grid>
+                <Grid item lg={1.5} md={1} sm={1} xs={1}>
+                  <SignalCellularAltIcon />
+                </Grid>
+                <Grid item lg={2} md={4} sm={3} xs={3.2}></Grid>
+                <Grid
+                  item
+                  lg={5}
+                  md={3}
+                  sm={4}
+                  xs={3.8}
+                  className="slider_content"
+                >
+                  {/* <label>Beginner to Advance</label> */}
+                  <Button
+                    id="learn_now_btn"
+                    onClick={() => navigate("/courses")}
+                  >
+                    Learn Now
+                  </Button>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item lg={3} sm={6} className="slider_image">
+              <Grid container className="course_image">
+                <Grid item lg={3} md={3} sm={3} xs={3}>
+                  <img src={couserImageTwo} className="teacher_course_image" />
+                </Grid>
+                <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+                <Grid
+                  item
+                  lg={3}
+                  md={3}
+                  sm={3}
+                  xs={3}
+                  style={{ padding: "1%" }}
+                >
+                  <img
+                    src="https://assets-global.website-files.com/622642781cd7e96ac1f66807/62d0f091fc73b7a5828854b1_022021-Harness-Blogpost-DevOpsGeneric-Header-2400x700-1.png"
+                    style={{ width: "100%", height: "5vh" }}
+                  />
+                </Grid>
+                <div className="course_teacher" style={{ width: "100%" }}>
+                  <p>
+                    <b>
+                      {" "}
+                      DevOps <br></br> For Beginner to Advance
+                      <br></br>
+                      By Jaffar Zahid
+                    </b>
+                  </p>
+                </div>
+              </Grid>
+              <p>Tecnology</p>
+              <h5>IT Software</h5>
+              <Grid container className="slider_content_main">
+                <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
+                  <AccessTimeIcon />
+                </Grid>
+                <Grid
+                  item
+                  lg={2}
+                  md={3}
+                  sm={3}
+                  xs={3}
+                  className="slider_content"
+                >
+                  <label>
+                    <b> 2 Hour</b>
+                  </label>
+                </Grid>
+                <Grid item lg={1.5} md={1} sm={1} xs={1}>
+                  <SignalCellularAltIcon />
+                </Grid>
+                <Grid item lg={2} md={4} sm={3} xs={3.2}></Grid>
+                <Grid
+                  item
+                  lg={5}
+                  md={3}
+                  sm={4}
+                  xs={3.8}
+                  className="slider_content"
+                >
+                  {/* <label>Beginner to Advance</label> */}
+                  <Button
+                    id="learn_now_btn"
+                    onClick={() => navigate("/courses")}
+                  >
+                    Learn Now
+                  </Button>
+                </Grid>
+              </Grid>
+            </Grid>
+
+            {/* <Grid item lg={3} sm={6} className="slider_image">
             <Grid container className="course_image">
               <Grid item lg={3} md={3} sm={3} xs={3}>
                 <img src={couserImageTwo} />
@@ -730,7 +855,8 @@ const WebsiteFeatures = () => {
               </Grid>
             </Grid>
           </Grid> */}
-        </Grid>
+          </Grid>
+        </div>
       </div>
     </div>
   );

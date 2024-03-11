@@ -9,6 +9,8 @@ import "./signup.css";
 import { toast } from "react-toastify";
 import { Button, InputLabel } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
+import InputMask from "react-input-mask";
+
 import Box from "@mui/material/Box";
 
 const SignUp = () => {
@@ -52,15 +54,11 @@ const SignUp = () => {
   return (
     <div>
       <div className="register_contact_main">
-        <Container
+        {/* <Container
           className="signup_main"
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <form
-            onSubmit={handleSubmit}
-            method="POST"
-            // class=" p-4 p-md-5 contact-form"
-          >
+          <form onSubmit={handleSubmit} method="POST">
             <input type="hidden" name="_captcha" value="false" />
             <input
               type="hidden"
@@ -178,6 +176,196 @@ const SignUp = () => {
               </Grid>
             </Grid>
           </form>
+        </Container> */}
+        <Container>
+          <Grid container columnSpacing={1} style={{ display: "flex" }}>
+            <Grid item lg={3.5} style={{ flex: "1" }}>
+              <img
+                src="https://idpro.org/wp-content/uploads/2023/03/iStock-1442836782.jpg"
+                style={{
+                  width: "100%",
+                  height: "99%",
+                  objectFit: "cover",
+                  marginTop: "3%",
+                }}
+              />
+            </Grid>
+            <Grid item lg={6} style={{ flex: "1" }}>
+              <form onSubmit={handleSubmit} method="POST">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" href="#footer" />
+                <Grid container rowSpacing={2} className="signup_text">
+                  <Grid
+                    item
+                    lg={12}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    className="register_input"
+                  >
+                    <h4>Register Now</h4>
+                  </Grid>
+                  <Grid item lg={12} xs={12} className="register_input_filed">
+                    <p>Name</p>
+                    <input
+                      type="name"
+                      name="Name"
+                      required
+                      autoComplete="off"
+                      maxLength={20}
+                    />
+                  </Grid>
+
+                  <Grid item lg={12} xs={12} className="register_input_filed">
+                    <p>Email</p>
+                    <input
+                      type="email"
+                      name="Email"
+                      required
+                      autoComplete="off"
+                      maxLength={20}
+                    />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={12}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    className="register_input_filed"
+                  >
+                    <p>Phone Number</p>
+                    <InputMask
+                      mask="999-999-999"
+                      alwaysShowMask
+                      maskChar="_"
+                      type="text"
+                      name="Name"
+                      required
+                      autoComplete="off"
+                    />
+                  </Grid>
+                  <Grid item lg={12} xs={12} className="register_input_filed">
+                    <p>Courses</p>
+                    <Select
+                      value={selectedData}
+                      onChange={handleChange}
+                      name="Course"
+                      displayEmpty
+                      required
+                      inputProps={{ "aria-label": "Select Email" }}
+                      style={{
+                        width: "100%",
+                        textAlign: "start",
+                        height: "5vh",
+                        border: "2px solid rgb(0,134,173)",
+                        outline: "none", // Remove this line
+                        textDecoration: "none",
+                      }}
+                    >
+                      <MenuItem value="" disabled hidden>
+                        Select Course
+                      </MenuItem>
+                      <MenuItem
+                        className="hover_couse_time"
+                        value="Scrum Master"
+                      >
+                        Scrum Master
+                      </MenuItem>
+                      <MenuItem
+                        className="hover_couse_time"
+                        value="Scrum Master"
+                      >
+                        SQA
+                      </MenuItem>
+                      <MenuItem
+                        className="hover_couse_time"
+                        value="Scrum Master"
+                      >
+                        DevOps
+                      </MenuItem>
+                    </Select>
+                  </Grid>
+                  <Grid
+                    item
+                    lg={12}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    className="register_input_filed"
+                  >
+                    <p>Message</p>
+                    <textarea
+                      type="text"
+                      className="register_input_text_area"
+                      name="Message"
+                      required
+                      autoComplete="off"
+                      maxLength={500}
+                      rows={6} // Set the number of visible rows
+                      cols={50}
+                      style={{ height: "150px", resize: "none" }}
+                    />
+                  </Grid>
+                  <Grid
+                    item
+                    lg={12}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: "100%",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        width: "60%",
+                      }}
+                    >
+                      <button id="contact_btn_home_page" type="submit">
+                        {loading ? (
+                          <Box
+                            sx={{
+                              display: "flex",
+                              width: "100%",
+                              // padding: "2% 4%",
+                              height: "4.5vh",
+                            }}
+                          >
+                            <CircularProgress
+                              sx={{
+                                color: "white",
+                                height: "10px",
+                                width: "100%",
+                              }}
+                            />
+                          </Box>
+                        ) : (
+                          "Register Now"
+                        )}
+                      </button>
+                    </div>
+                  </Grid>
+                </Grid>
+              </form>
+            </Grid>
+            <Grid item lg={3.5} style={{ flex: "1" }}>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOELJKNfOlBMBxb3mobAaOgkHoJVTT8Tm45YOeRi9TKBZZf1SI0v5wLgqz9RcgxWvpaA&usqp=CAU"
+                style={{
+                  width: "100%",
+                  height: "99%",
+                  objectFit: "cover",
+                  marginTop: "3%",
+                }}
+              />
+            </Grid>
+          </Grid>
         </Container>
         {/* <Footer /> */}
       </div>

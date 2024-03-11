@@ -1,3 +1,4 @@
+import React from "react";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
@@ -5,7 +6,10 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../../Image/logo6.png";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+
+import logo from "../../Image/empire-state-new-logo.png";
 
 import { BrowserRouter } from "react-router-dom";
 import { HashLink, HashLink as link } from "react-router-hash-link";
@@ -24,8 +28,17 @@ const Header = () => {
   const closeNav = () => {
     setIsNavOpen(false);
   };
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    <div className="header_sticky" id="header_height" >
+    <div className="header_sticky" id="header_height">
       <div class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           {/* <img
@@ -105,6 +118,7 @@ const Header = () => {
                   style={{
                     backgroundColor:
                       location.pathname === "/" ? "rgb(4, 38, 48)" : "white",
+                    fontWeight: "bolder",
                   }}
                   onClick={closeNav}
                 >
@@ -118,6 +132,7 @@ const Header = () => {
                           location.pathname === "/"
                             ? "white"
                             : "rgb(0,134,173)",
+                        fontWeight: "bolder",
                       }}
                     >
                       Home
@@ -133,42 +148,13 @@ const Header = () => {
                   onClick={closeNav}
                   style={{
                     backgroundColor:
-                      location.pathname === "/aboutus"
-                        ? "rgb(4, 38, 48)"
-                        : "white",
-                  }}
-                >
-                  <p className="centered-text">
-                    <Link
-                      to="/aboutus"
-                      className="header_text_resp_one"
-                      id="header_text_resp"
-                      style={{
-                        color:
-                          location.pathname === "/aboutus"
-                            ? "white"
-                            : "rgb(0,134,173)",
-                      }}
-                    >
-                      About
-                    </Link>
-                  </p>
-                </Grid>
-                <Grid
-                  item
-                  lg={1}
-                  md={1}
-                  sm={1}
-                  xs={12}
-                  onClick={closeNav}
-                  style={{
-                    backgroundColor:
                       location.pathname === "/courses"
                         ? "rgb(4, 38, 48)"
                         : "white",
+                    fontWeight: "bolder",
                   }}
                 >
-                  <p className="centered-text">
+                  {/* <p className="centered-text">
                     <Link
                       to="/courses"
                       className="header_text_resp_one"
@@ -181,6 +167,95 @@ const Header = () => {
                       }}
                     >
                       Courses
+                    </Link>
+                  </p> */}
+                  <Button
+                    // id="basic-button"
+                    aria-controls={open ? "basic-menu" : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? "true" : undefined}
+                    onClick={handleClick}
+                    className="centered-text"
+                    style={{
+                      fontWeight: "bolder",
+                    }}
+                  >
+                    <Link
+                      to="/courses"
+                      className="header_text_resp_one"
+                      id="header_text_resp"
+                      style={{
+                        color:
+                          location.pathname === "/courses"
+                            ? "white"
+                            : "rgb(0,134,173)",
+                        fontWeight: "bolder",
+                      }}
+                    >
+                      Courses
+                    </Link>
+                  </Button>
+                  <Menu
+                    id="basic-menu"
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    MenuListProps={{
+                      "aria-labelledby": "basic-button",
+                    }}
+                  >
+                    <MenuItem
+                      className="hover_couse_time"
+                      value="Scrum Master"
+                      onClick={handleClose}
+                    >
+                      Scrum Master
+                    </MenuItem>
+                    <MenuItem
+                      className="hover_couse_time"
+                      value="Scrum Master"
+                      onClick={handleClose}
+                    >
+                      SQA
+                    </MenuItem>
+                    <MenuItem
+                      className="hover_couse_time"
+                      value="Scrum Master"
+                      onClick={handleClose}
+                    >
+                      DevOps
+                    </MenuItem>
+                  </Menu>
+                </Grid>
+                <Grid
+                  item
+                  lg={1}
+                  md={1}
+                  sm={1}
+                  xs={12}
+                  onClick={closeNav}
+                  style={{
+                    backgroundColor:
+                      location.pathname === "/aboutus"
+                        ? "rgb(4, 38, 48)"
+                        : "white",
+                    fontWeight: "bolder",
+                  }}
+                >
+                  <p className="centered-text">
+                    <Link
+                      to="/aboutus"
+                      className="header_text_resp_one"
+                      id="header_text_resp"
+                      style={{
+                        color:
+                          location.pathname === "/aboutus"
+                            ? "white"
+                            : "rgb(0,134,173)",
+                        fontWeight: "bolder",
+                      }}
+                    >
+                      About
                     </Link>
                   </p>
                 </Grid>
@@ -197,6 +272,7 @@ const Header = () => {
                       location.pathname === "/contact"
                         ? "rgb(4, 38, 48)"
                         : "white",
+                    fontWeight: "bolder",
                   }}
                 >
                   <p className="centered-text">
@@ -209,6 +285,7 @@ const Header = () => {
                           location.pathname === "/contact"
                             ? "white"
                             : "rgb(0,134,173)",
+                        fontWeight: "bolder",
                       }}
                     >
                       Contact Us

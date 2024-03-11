@@ -4,11 +4,11 @@
     justify-content: center;
   }
   .bg_contact {
-    background-image: url(../../../Image/contactbgImage.jpg);
+    background-image: url("../../../Image/contactBg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 60vh;
   }
   .conatact_image img {
     width: 100%;

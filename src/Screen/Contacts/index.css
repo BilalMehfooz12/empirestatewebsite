@@ -66,3 +66,10 @@
   justify-content: center;
   margin-top: 2%;
 }
+
+.conatact_image_lefts{
+  width: "10%" !important;
+  height: 99vh !important;
+  object-fit: cover;
+  margin-top: 3%;
+}
