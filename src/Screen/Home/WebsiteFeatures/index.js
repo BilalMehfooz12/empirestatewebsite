@@ -24,7 +24,7 @@ import couserImageTwo from "../../../Image/sqateacher.jpg";
 import scrumicon from "../../../Image/scrumicon.webp";
 import femaleIcon from "../../../Image/female.icon.png";
 import { objData } from "../../CourseData/courseData";
-const WebsiteFeatures = (handleClick, selectedData) => {
+const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
   const navigate = useNavigate();
   return (
     <div>
@@ -33,6 +33,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
         id="services"
         style={{ display: "flex", justifyContent: "center" }}
       >
+        <h3 style={{ margin: "5%" }}>{named}</h3>
         <Grid container maxWidth="lg" className="website_feature_main">
           <Grid
             item
@@ -81,7 +82,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
           </Grid>
         </Grid>
       </div>
-      <div style={{ backgroundColor: "rgb(230, 246, 250)" }}>
+      <div className="courses_bg_color">
         <div
           style={{
             display: "flex",
@@ -98,7 +99,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
             className="course_main"
           >
             <Grid item lg={11} md={11} sm={11} xs={8}>
-              <h3>Courses</h3>
+              <h3 style={{ color: "white" }}>Courses</h3>
             </Grid>
             <Grid item lg={1} md={1} sm={11} xs={4}>
               <Button
@@ -108,7 +109,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
                 View All
               </Button>
             </Grid>
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center", color: "white" }}>
               {" "}
               We Offers best courses that assure to enhance and improve your
               skill set. Choose and start to learn now.
@@ -594,7 +595,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
                     </div>
                   </Grid>
                   <p> {item.tecknology}</p>
-                  <h5>IT Software</h5>
+                  <h5 style={{ color: "white" }}>IT Software</h5>
                   <Grid container className="slider_content_main">
                     <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
                       {item.icon}
@@ -623,6 +624,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
                       sm={4}
                       xs={3.8}
                       className="slider_content"
+                      onClick={() => navigate("/courses")}
                     >
                       <Button
                         id="learn_now_btn"
@@ -638,7 +640,7 @@ const WebsiteFeatures = (handleClick, selectedData) => {
           </Grid>
         </div>
       </div>
-      {selectedData.courseDescription}
+      {selectedData?.courseDescription}
     </div>
   );
 };

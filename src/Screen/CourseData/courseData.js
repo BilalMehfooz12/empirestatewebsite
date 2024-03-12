@@ -54,7 +54,7 @@ export const objData = [
       "https://st.depositphotos.com/57404040/60706/i/450/depositphotos_607063656-stock-photo-devops-devsecops-approach-app-development.jpg",
     role: "DevOps",
     levelCourse: "Beginner to Advance",
-    name: "Samiya Khalid",
+    name: "",
     courseName: "Devops",
     tecknology: "Tecnology",
     application: "Aplication Support",

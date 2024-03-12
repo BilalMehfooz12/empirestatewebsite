@@ -252,7 +252,7 @@ const RequestCall = () => {
                     xs={12}
                     className="register_input"
                   >
-                    <h4>Schedule A Call Back</h4>
+                    <h4>Schedule A Call</h4>
                   </Grid>
                   <Grid item lg={12} xs={12} className="register_input_filed">
                     <p>Name</p>

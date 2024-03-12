@@ -84,7 +84,8 @@ padding: 4%;
   }
 
   .course_main{
-    padding: 3% 0%;
+    padding: 2% 0%;
+
   }
   .course_main h3{
     color: rgb(0,134,173);
@@ -103,7 +104,15 @@ padding: 4%;
   .veiw_course_btn:hover{
 background-color: rgb(26, 174, 219) !important;
   }
-
+  
+/* .style={{ backgroundColor: "rgb(230, 246, 250)" }} */
+.courses_bg_color{
+  background-image: url(https://bracketweb.com/eduactwp/wp-content/uploads/2023/09/footer-bg-1.png);
+  background-color: rgb(5, 73, 96);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white !important;
+}
   @media (max-width:550px){
     .website_feature_main{
       justify-content: center;
@@ -125,6 +134,8 @@ background-color: rgb(26, 174, 219) !important;
 .slider_image{
   text-align: start;
   font-family: var(--fontFamily);
+  margin-top: -2.5% !important;
+  
 }
 .slider_image p{
   margin: -1% 0%;

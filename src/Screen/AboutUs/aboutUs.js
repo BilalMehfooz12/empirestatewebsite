@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import About_image from "../../Image/contact_image_2.jpg";
-import empirAbout from "../../Image/aboutEmpireImage.jpeg";
+import empirAbout from "../../Image/empireBuildingTwoImage.jpeg";
 import Footer from "../../Component/Footer";
 import "./about.css";
 const AboutUs = () => {

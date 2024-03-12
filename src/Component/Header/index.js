@@ -30,6 +30,9 @@ const Header = ({ handleClick, objData }) => {
   };
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const handleClickOver = () => {
+    setIsNavOpen(false);
+  };
   const handleClicks = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -176,7 +179,7 @@ const Header = ({ handleClick, objData }) => {
 
                   <Button
                     // id="basic-button"
-                    // onMouseEnter={handleClicks} // Open menu on mouse enter
+                    onMouseOver={handleClickOver} // Open menu on mouse enter
                     onClick={handleClicks}
                     aria-controls={open ? "basic-menu" : undefined}
                     aria-haspopup="true"

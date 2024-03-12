@@ -7,11 +7,11 @@ import Project from "../Project";
 import Industries from "../Industries";
 import GetInTouch from "../GetInTouch";
 import { objData } from "../../../Screen/CourseData/courseData";
-const HomeComponent = () => {
+const HomeComponent = ({ handleClick }) => {
   return (
     <div>
       <Inventing />
-      <WebsiteFeatures />
+      <WebsiteFeatures handleClick={handleClick} />
       {/* <WebsitePrice /> */}
       <ContactUs />
       {/* <Project /> */}

@@ -52,7 +52,7 @@ const ContactUs = () => {
           style={{ padding: "1% 1%" }}
           onClick={() => naviate("/requestCall")}
         >
-          <b> Schedule A Call Back</b>
+          <b> Schedule A Call</b>
         </Button>
       </div>
       {/* <Container>

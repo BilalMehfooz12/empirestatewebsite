@@ -74,7 +74,7 @@ const Footer = () => {
                 <AddIcCallIcon />
               </Grid>
               <Grid item lg={10} xs={11}>
-                <p>+1(347)593-5383</p>
+                <p>+1(347)593-5383 +1(929)690-1963</p>
               </Grid>
             </Grid>
           </Grid>
