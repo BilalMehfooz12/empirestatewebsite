@@ -16,7 +16,7 @@ import { HashLink, HashLink as link } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./index.css";
-const Header = () => {
+const Header = ({ handleClick, objData }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
   };
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
+  const handleClicks = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -67,7 +67,11 @@ const Header = () => {
             <Container className="header_child_bg">
               <Grid container className="main_headers" gap={2}>
                 <Grid item lg={1.8} md={2} sm={2} xs={12}>
-                  <img src={logo} className="logo_img" />
+                  <img
+                    src={logo}
+                    className="logo_img"
+                    onClick={() => navigate("/aboutus")}
+                  />
                 </Grid>
                 {/* 
                 <Grid item xl={1.5} lg={1.5} md={2.5} sm={3}>
@@ -169,12 +173,14 @@ const Header = () => {
                       Courses
                     </Link>
                   </p> */}
+
                   <Button
                     // id="basic-button"
+                    // onMouseEnter={handleClicks} // Open menu on mouse enter
+                    onClick={handleClicks}
                     aria-controls={open ? "basic-menu" : undefined}
                     aria-haspopup="true"
                     aria-expanded={open ? "true" : undefined}
-                    onClick={handleClick}
                     className="centered-text"
                     style={{
                       fontWeight: "bolder",
@@ -204,7 +210,20 @@ const Header = () => {
                       "aria-labelledby": "basic-button",
                     }}
                   >
-                    <MenuItem
+                    {objData.map((item) => {
+                      return (
+                        <div onClick={() => handleClick(item)}>
+                          <MenuItem
+                            className="hover_couse_time"
+                            value="Scrum Master"
+                            onClick={handleClose}
+                          >
+                            {item.courseName}
+                          </MenuItem>
+                        </div>
+                      );
+                    })}
+                    {/* <MenuItem
                       className="hover_couse_time"
                       value="Scrum Master"
                       onClick={handleClose}
@@ -224,7 +243,7 @@ const Header = () => {
                       onClick={handleClose}
                     >
                       DevOps
-                    </MenuItem>
+                    </MenuItem> */}
                   </Menu>
                 </Grid>
                 <Grid

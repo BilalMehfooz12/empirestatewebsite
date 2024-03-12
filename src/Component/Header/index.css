@@ -39,6 +39,7 @@ font-family: var(--fontFamily);
   display: flex !important;
   align-items: center !important;
   margin-top: 2%;
+  cursor: pointer;
 }
 .centered-text {
   display: flex;

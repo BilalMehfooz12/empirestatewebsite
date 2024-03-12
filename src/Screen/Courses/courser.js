@@ -16,147 +16,15 @@ import CouserTwo from "../../Image/courseTwo.png";
 import CouserThree from "../../Image/courseThree.png";
 import CouserFour from "../../Image/sqateacher.jpg";
 import femaleIcon from "../../Image/female.icon.png";
+import { objData } from "../../Screen/CourseData/courseData";
 import "./courses.css";
 import { useState } from "react";
-const Courses = () => {
-  const [selectedData, setSelectedData] = useState([]);
-  const [model, setModel] = useState(false);
+const Courses = ({ selectedData, handleClick, model, modelClose }) => {
+  // const [selectedData, setSelectedData] = useState([]);
+  // const [model, setModel] = useState(false);
+  const [data, setData] = useState(objData);
+  console.log("data", data);
 
-  const obj = [
-    {
-      imageRole: Cousertwo,
-      tecknology: "React",
-      role: "Scrum Master",
-      levelCourse: "Beginner to Advance",
-      name: "Samiya Khalid",
-      tecknology: "Tecnology",
-      application: "IT Software",
-      icon: <AccessTimeIcon />,
-      image: femaleIcon,
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-      courseDescription:
-        "Introduction to Agile and Scrum Scrum Theory and Principles Scrum Roles - Scrum Master Scrum Roles - Product Owner and Development Team Scrum Events - Sprint and Sprint Planning Scrum Events - Daily Scrum, Sprint Review, and Sprint Retrospective Artifacts - Product Backlog, Sprint Backlog, and Increment Agile Tools and Metrics Scaling Scrum and Agile Frameworks Agile Mindset and Continuous Improvement",
-      CourseName: "Scrum Master",
-    },
-    {
-      imageRole: CouserOne,
-      role: "Software Quality Assurance",
-      levelCourse: "Beginner to Advance",
-      name: "Jaffar Zahid",
-      tecknology: "Tecnology",
-      application: "IT Software",
-      icon: <AccessTimeIcon />,
-      image: CouserFour,
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-      courseDescription:
-        "Java, Selenium, TestNG, BDD Cucumber, Maven, JavaScript, Cypress, Playwright, Postman, Rest Assured API, SQL, Agile, Git, Jira, Jmeter, Manual & Automation",
-      CourseName: "Software Quality Assurance",
-    },
-    {
-      imageRole: CouserOne,
-      role: "Scrum Master",
-      levelCourse: "Beginner to Advance",
-      name: "Samiya Khalid",
-      tecknology: "Devops",
-      application: "Aplication Support",
-      icon: <AccessTimeIcon />,
-      image:
-        "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-      hour: "2 Hour",
-      iconLevel: <SignalCellularAltIcon />,
-      level: "Beginner",
-      courseDescription:
-        "Computer Network, CI/CD, Jenkins, Maven, Gradle, Docker, Kubernetes, AWS, AZURE, GCP, Ansible, Terraform, Git, Github, SonarQube, Prometheus, Grafana, ELK",
-      CourseName: "DevOps",
-    },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "Scrum",
-    //   application: "Aplication Support",
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-    //   icon: <AccessTimeIcon />,
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "Tecnology",
-    //   application: "Aplication Support",
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-    //   icon: <AccessTimeIcon />,
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "React",
-    //   application: "Aplication Support",
-    //   icon: <AccessTimeIcon />,
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "Devops",
-    //   application: "Aplication Support",
-    //   icon: <AccessTimeIcon />,
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "Tecnology",
-    //   application: "Aplication Support",
-    //   icon: <AccessTimeIcon />,
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "React",
-    //   application: "Aplication Support",
-    //   icon: <AccessTimeIcon />,
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-    // {
-    //   imageRole: CouserOne,
-    //   tecknology: "Devops",
-    //   application: "Aplication Support",
-    //   icon: <AccessTimeIcon />,
-    //   image:
-    //     "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
-
-    //   hour: "2 Hour",
-    //   iconLevel: <SignalCellularAltIcon />,
-    //   level: "Beginner",
-    // },
-  ];
   const [inpputSearch, setInputSearch] = useState("");
   const [page, setPage] = React.useState(1);
   const rowsPerPage = 4;
@@ -168,7 +36,7 @@ const Courses = () => {
     setInputSearch(e.target.value);
   };
   console.log(inpputSearch);
-  const filterData = obj.filter((item) => {
+  const filterData = data.filter((item) => {
     if (item == "") {
       return item;
     } else if (
@@ -178,10 +46,10 @@ const Courses = () => {
     }
   });
 
-  const handleClick = (item) => {
-    setSelectedData(item);
-    setModel(true);
-  };
+  // const handleClick = (item) => {
+  //   setSelectedData(item);
+  //   setModel(true);
+  // };
   // const lastIndex = page * rowsPerPage;
   // const firstIndex = lastIndex - rowsPerPage;
   // const result = filterData.slice(firstIndex, lastIndex);
@@ -324,7 +192,8 @@ const Courses = () => {
             </Grid>
             <Grid item lg={1}>
               <Button
-                onClick={() => setModel(false)}
+                // onClick={() => setModel(false)}
+                onClick={modelClose}
                 className="model_close_btn"
               >
                 {" "}

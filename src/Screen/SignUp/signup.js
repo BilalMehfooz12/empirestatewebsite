@@ -236,7 +236,7 @@ const SignUp = () => {
                   >
                     <p>Phone Number</p>
                     <InputMask
-                      mask="999-999-999"
+                      mask="999-999-9999"
                       alwaysShowMask
                       maskChar="_"
                       type="text"

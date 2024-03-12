@@ -23,8 +23,8 @@ import couserImageOne from "../../../Image/sqaicon.jpg";
 import couserImageTwo from "../../../Image/sqateacher.jpg";
 import scrumicon from "../../../Image/scrumicon.webp";
 import femaleIcon from "../../../Image/female.icon.png";
-
-const WebsiteFeatures = () => {
+import { objData } from "../../CourseData/courseData";
+const WebsiteFeatures = (handleClick, selectedData) => {
   const navigate = useNavigate();
   return (
     <div>
@@ -562,302 +562,83 @@ const WebsiteFeatures = () => {
             maxWidth="lg"
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <Grid item lg={3} sm={6} className="slider_image">
-              <Grid container className="course_image">
-                <Grid item lg={3} md={3} sm={3} xs={3}>
-                  <img src={femaleIcon} className="teacher_course_image" />
-                </Grid>
-                <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-                <Grid
-                  item
-                  lg={3}
-                  md={3}
-                  sm={3}
-                  xs={3}
-                  style={{ padding: "1%" }}
-                >
-                  <img
-                    src="https://www.projectmanagementexperts.com/wp-content/uploads/2023/04/2648755022.jpg"
-                    style={{ width: "100%", height: "5vh" }}
-                  />
-                </Grid>
-                <div className="course_teacher" style={{ width: "100%" }}>
-                  <p>
-                    <b>
-                      Scrum Master <br></br>For Beginner to Advance<br></br>
-                      By Samiya Khalid
-                    </b>
-                  </p>
-                </div>
-              </Grid>
-              <p>Tecnology</p>
-              <h5>IT Software</h5>
-              <Grid container className="slider_content_main">
-                <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
-                  <AccessTimeIcon />
-                </Grid>
-                <Grid
-                  item
-                  lg={2}
-                  md={3}
-                  sm={3}
-                  xs={3}
-                  className="slider_content"
-                >
-                  <label>
-                    <b> 2 Hour</b>
-                  </label>
-                </Grid>
-                <Grid item lg={2.5} md={1} sm={1} xs={1}>
-                  <SignalCellularAltIcon />
-                </Grid>
-                <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
+            {objData.map((item) => {
+              return (
+                <Grid item lg={3} sm={6} className="slider_image">
+                  <Grid container className="course_image">
+                    <Grid item lg={3} md={3} sm={3} xs={3}>
+                      <img src={item.image} className="teacher_course_image" />
+                    </Grid>
+                    <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
+                    <Grid
+                      item
+                      lg={3}
+                      md={3}
+                      sm={3}
+                      xs={3}
+                      style={{ padding: "1%" }}
+                    >
+                      <img
+                        src={item.imageRole}
+                        style={{ width: "100%", height: "5vh" }}
+                      />
+                    </Grid>
+                    <div className="course_teacher" style={{ width: "100%" }}>
+                      <p>
+                        <b>
+                          {item.role} <br></br>For {item.levelCourse}
+                          <br></br>
+                          By {item.name}
+                        </b>
+                      </p>
+                    </div>
+                  </Grid>
+                  <p> {item.tecknology}</p>
+                  <h5>IT Software</h5>
+                  <Grid container className="slider_content_main">
+                    <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
+                      {item.icon}
+                    </Grid>
+                    <Grid
+                      item
+                      lg={2}
+                      md={3}
+                      sm={3}
+                      xs={3}
+                      className="slider_content"
+                    >
+                      <label>
+                        <b> 2 Hour</b>
+                      </label>
+                    </Grid>
+                    <Grid item lg={2.5} md={1} sm={1} xs={1}>
+                      <SignalCellularAltIcon />
+                    </Grid>
+                    <Grid item lg={1} md={4} sm={3} xs={3.2}></Grid>
 
-                <Grid
-                  item
-                  lg={5}
-                  md={3}
-                  sm={4}
-                  xs={3.8}
-                  className="slider_content"
-                >
-                  <Button
-                    id="learn_now_btn"
-                    onClick={() => navigate("/courses")}
-                  >
-                    Learn Now
-                  </Button>
-                  {/* <label>Beginner to Advance</label> */}
+                    <Grid
+                      item
+                      lg={5}
+                      md={3}
+                      sm={4}
+                      xs={3.8}
+                      className="slider_content"
+                    >
+                      <Button
+                        id="learn_now_btn"
+                        onClick={() => handleClick(item)}
+                      >
+                        Learn Now
+                      </Button>
+                    </Grid>
+                  </Grid>
                 </Grid>
-              </Grid>
-            </Grid>
-            <Grid item lg={3} sm={6} className="slider_image">
-              <Grid container className="course_image">
-                <Grid item lg={3} md={3} sm={3} xs={3}>
-                  <img src={couserImageTwo} className="teacher_course_image" />
-                </Grid>
-                <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-                <Grid
-                  item
-                  lg={3}
-                  md={3}
-                  sm={3}
-                  xs={3}
-                  style={{ padding: "1%" }}
-                >
-                  <img
-                    src={couserImageOne}
-                    style={{ width: "100%", height: "5vh" }}
-                  />
-                </Grid>
-                <div className="course_teacher" style={{ width: "100%" }}>
-                  <p>
-                    <b>
-                      {" "}
-                      Software Quality Assurance <br></br> For Beginner to
-                      Advance
-                      <br></br>
-                      By Jaffar Zahid
-                    </b>
-                  </p>
-                </div>
-              </Grid>
-              <p>Tecnology</p>
-              <h5>IT Software</h5>
-              <Grid container className="slider_content_main">
-                <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
-                  <AccessTimeIcon />
-                </Grid>
-                <Grid
-                  item
-                  lg={2}
-                  md={3}
-                  sm={3}
-                  xs={3}
-                  className="slider_content"
-                >
-                  <label>
-                    <b> 2 Hour</b>
-                  </label>
-                </Grid>
-                <Grid item lg={1.5} md={1} sm={1} xs={1}>
-                  <SignalCellularAltIcon />
-                </Grid>
-                <Grid item lg={2} md={4} sm={3} xs={3.2}></Grid>
-                <Grid
-                  item
-                  lg={5}
-                  md={3}
-                  sm={4}
-                  xs={3.8}
-                  className="slider_content"
-                >
-                  {/* <label>Beginner to Advance</label> */}
-                  <Button
-                    id="learn_now_btn"
-                    onClick={() => navigate("/courses")}
-                  >
-                    Learn Now
-                  </Button>
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item lg={3} sm={6} className="slider_image">
-              <Grid container className="course_image">
-                <Grid item lg={3} md={3} sm={3} xs={3}>
-                  <img src={couserImageTwo} className="teacher_course_image" />
-                </Grid>
-                <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-                <Grid
-                  item
-                  lg={3}
-                  md={3}
-                  sm={3}
-                  xs={3}
-                  style={{ padding: "1%" }}
-                >
-                  <img
-                    src="https://assets-global.website-files.com/622642781cd7e96ac1f66807/62d0f091fc73b7a5828854b1_022021-Harness-Blogpost-DevOpsGeneric-Header-2400x700-1.png"
-                    style={{ width: "100%", height: "5vh" }}
-                  />
-                </Grid>
-                <div className="course_teacher" style={{ width: "100%" }}>
-                  <p>
-                    <b>
-                      {" "}
-                      DevOps <br></br> For Beginner to Advance
-                      <br></br>
-                      By Jaffar Zahid
-                    </b>
-                  </p>
-                </div>
-              </Grid>
-              <p>Tecnology</p>
-              <h5>IT Software</h5>
-              <Grid container className="slider_content_main">
-                <Grid item lg={1.5} md={0.8} sm={1} xs={1}>
-                  <AccessTimeIcon />
-                </Grid>
-                <Grid
-                  item
-                  lg={2}
-                  md={3}
-                  sm={3}
-                  xs={3}
-                  className="slider_content"
-                >
-                  <label>
-                    <b> 2 Hour</b>
-                  </label>
-                </Grid>
-                <Grid item lg={1.5} md={1} sm={1} xs={1}>
-                  <SignalCellularAltIcon />
-                </Grid>
-                <Grid item lg={2} md={4} sm={3} xs={3.2}></Grid>
-                <Grid
-                  item
-                  lg={5}
-                  md={3}
-                  sm={4}
-                  xs={3.8}
-                  className="slider_content"
-                >
-                  {/* <label>Beginner to Advance</label> */}
-                  <Button
-                    id="learn_now_btn"
-                    onClick={() => navigate("/courses")}
-                  >
-                    Learn Now
-                  </Button>
-                </Grid>
-              </Grid>
-            </Grid>
-
-            {/* <Grid item lg={3} sm={6} className="slider_image">
-            <Grid container className="course_image">
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageTwo} />
-              </Grid>
-              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageOne} />
-              </Grid>
-              <div className="course_teacher">
-                <p>
-                  Application Security Testing For<br></br> Absolute Beginners
-                </p>
-                <b>By Sir Haris</b>
-              </div>
-            </Grid>
-            <p>Tecnology</p>
-            <h5>Aplication Support</h5>
-            <Grid container className="slider_content_main">
-              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
-                <AccessTimeIcon />
-              </Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
-                <label>2 Hour</label>
-              </Grid>
-              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
-              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
-                <SignalCellularAltIcon />
-              </Grid>
-              <Grid
-                item
-                lg={3}
-                md={1}
-                sm={1.5}
-                xs={1.5}
-                className="slider_content"
-              >
-                <label>Beginner</label>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item lg={3} sm={6} className="slider_image">
-            <Grid container className="course_image">
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageTwo} />
-              </Grid>
-              <Grid item lg={6} md={6} sm={6} xs={6}></Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3}>
-                <img src={couserImageOne} />
-              </Grid>
-              <div className="course_teacher">
-                <p>
-                  Application Security Testing For<br></br> Absolute Beginners
-                </p>
-                <b>By Sir Haris</b>
-              </div>
-            </Grid>
-            <p>Tecnology</p>
-            <h5>Aplication Support</h5>
-            <Grid container className="slider_content_main">
-              <Grid item lg={1.5} md={0.5} sm={0.5} xs={1}>
-                <AccessTimeIcon />
-              </Grid>
-              <Grid item lg={3} md={3} sm={3} xs={3} className="slider_content">
-                <label>2 Hour</label>
-              </Grid>
-              <Grid item lg={3} md={7} sm={6} xs={5}></Grid>
-              <Grid item lg={1.5} md={0.5} sm={0.8} xs={1}>
-                <SignalCellularAltIcon />
-              </Grid>
-              <Grid
-                item
-                lg={3}
-                md={1}
-                sm={1.5}
-                xs={1.5}
-                className="slider_content"
-              >
-                <label>Beginner</label>
-              </Grid>
-            </Grid>
-          </Grid> */}
+              );
+            })}
           </Grid>
         </div>
       </div>
+      {selectedData.courseDescription}
     </div>
   );
 };
