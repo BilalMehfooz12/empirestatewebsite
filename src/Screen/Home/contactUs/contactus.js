@@ -49,7 +49,7 @@ const ContactUs = () => {
       <div style={{ display: "flex", justifyContent: "end", padding: "2%" }}>
         <Button
           id="learn_now_btn"
-          style={{ padding: "1% 1%", width: "12%" }}
+          style={{ padding: "1% 1%", width: "17%" }}
           onClick={() => naviate("/requestCall")}
         >
           <b> Schedule A Call</b>

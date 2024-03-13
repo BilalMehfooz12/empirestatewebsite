@@ -57,7 +57,7 @@ const Courses = ({ selectedData, handleClick, model, modelClose }) => {
     <div>
       <div
         // className="courses_main" style={{ height: "48vh" }}
-        style={{ height: model ? "auto" : "65vh" }}
+        style={{ height: model ? "auto" : "auto" }}
       >
         <div>
           <Grid
