@@ -37,7 +37,7 @@
 
   .inventing_img img {
     max-width: 60%; /* Limit maximum width to 50% of the container */
-    max-height: 38vh; /* Limit maximum height to 33% of the viewport height */
+    max-height: 37vh; /* Limit maximum height to 33% of the viewport height */
     border-radius: 50%; /* Make the image circular */
     margin-top: -10%;
   }
