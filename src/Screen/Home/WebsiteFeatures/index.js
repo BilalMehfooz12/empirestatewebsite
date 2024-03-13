@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import { useNavigate } from "react-router-dom";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./index.css";
 import { Button } from "@mui/material";
 import img2 from "../../../Image/services.png";
@@ -33,12 +34,12 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
         id="services"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <h3 style={{ margin: "5%" }}>{named}</h3>
+        {/* <h3 style={{ margin: "5%" }}>{named}</h3> */}
         <Grid container maxWidth="lg" className="website_feature_main">
           <Grid
             item
-            lg={3.5}
-            md={3.5}
+            lg={3.8}
+            md={3.8}
             sm={5}
             xs={11}
             className="wesbsite_feature_child"
@@ -52,8 +53,8 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
           </Grid>
           <Grid
             item
-            lg={3.5}
-            md={3.5}
+            lg={3.8}
+            md={3.8}
             sm={5}
             xs={11}
             className="wesbsite_feature_child"
@@ -67,8 +68,8 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
           </Grid>
           <Grid
             item
-            lg={3.5}
-            md={3.5}
+            lg={3.8}
+            md={3.8}
             sm={5}
             xs={11}
             className="wesbsite_feature_child"
@@ -99,7 +100,7 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
             className="course_main"
           >
             <Grid item lg={11} md={11} sm={11} xs={8}>
-              <h3 style={{ color: "white" }}>Courses</h3>
+              <h3 style={{ color: "rgb(0,134,173)" }}>Courses</h3>
             </Grid>
             <Grid item lg={1} md={1} sm={11} xs={4}>
               <Button
@@ -109,7 +110,7 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
                 View All
               </Button>
             </Grid>
-            <p style={{ textAlign: "center", color: "white" }}>
+            <p style={{ textAlign: "center", color: "black" }}>
               {" "}
               We Offers best courses that assure to enhance and improve your
               skill set. Choose and start to learn now.
@@ -557,7 +558,7 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
       </div> */}
 
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Grid
+          {/* <Grid
             container
             spacing={3}
             maxWidth="lg"
@@ -634,6 +635,84 @@ const WebsiteFeatures = ({ handleClick, selectedData, named }) => {
                       </Button>
                     </Grid>
                   </Grid>
+                </Grid>
+              );
+            })}
+          </Grid> */}
+
+          <Grid
+            container
+            maxWidth="lg"
+            gap={3}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            {objData.map((item) => {
+              return (
+                <Grid
+                  item
+                  lg={3.8}
+                  md={5}
+                  sm={5}
+                  xs={12}
+                  className="course_cards"
+                >
+                  <img className="courses_image" src={item.imageRole} />
+                  <Grid container>
+                    <Grid item lg={3} md={3} sm={3} xs={3}>
+                      <img src={item.image} className="teacher_course_image" />
+                    </Grid>
+                    <Grid item lg={4} md={3} sm={3} xs={3}></Grid>
+                    <Grid
+                      item
+                      lg={5}
+                      md={6}
+                      sm={6}
+                      xs={6}
+                      style={{ color: " rgb(0, 134, 173)" }}
+                    >
+                      <Grid container className="slider_content_main">
+                        <Grid item lg={2.5} md={2} sm={2} xs={2}>
+                          {item.icon}
+                        </Grid>
+                        <Grid
+                          item
+                          lg={5}
+                          md={3}
+                          sm={5}
+                          xs={5}
+                          className="slider_content"
+                        >
+                          <label>
+                            <b> 2 Hour</b>
+                          </label>
+                        </Grid>
+                        <Grid item lg={1} md={1} sm={1} xs={1}>
+                          <SignalCellularAltIcon />
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                  <h3 className="teacher_name">{item.role}</h3>
+                  <div className="course_teacher" style={{ width: "100%" }}>
+                    <p>
+                      <b>
+                        <br></br>For {item.levelCourse}
+                        <br></br>
+                        By {item.name}
+                      </b>
+                    </p>
+                  </div>
+                  <div
+                    className="learn_btn_start"
+                    onClick={() => navigate("/courses")}
+                  >
+                    <Button
+                      id="learn_now_btn"
+                      onClick={() => handleClick(item)}
+                    >
+                      Learn Now <ArrowForwardIcon />
+                    </Button>
+                  </div>
                 </Grid>
               );
             })}

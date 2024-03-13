@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import img1 from "../../../Image/empireBanner.png";
+import img1 from "../../../Image/empire-state-image-4.png";
 import "./index.css";
 
 const Inventing = () => {

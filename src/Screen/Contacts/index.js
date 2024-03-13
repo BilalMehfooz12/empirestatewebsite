@@ -61,18 +61,13 @@ const Contacts = () => {
     <div className="contact_us_height">
       <Container>
         <Grid container columnSpacing={1} style={{ display: "flex" }}>
-          <Grid item lg={3.5} style={{ flex: "1" }}>
+          <Grid item lg={3.5} sm={0} xs={0} style={{ flex: "1" }}>
             <img
               src="https://static.vecteezy.com/system/resources/thumbnails/007/067/602/small/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg"
-              style={{
-                width: "100%",
-                height: "99%",
-                objectFit: "cover",
-                marginTop: "3%",
-              }}
+              id="contact_image_left"
             />
           </Grid>
-          <Grid item lg={6} style={{ flex: "1" }}>
+          <Grid item lg={6} md={12} sm={12} className="flex_contact">
             <form onSubmit={handleSubmit} method="POST">
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next" href="#footer" />
@@ -230,12 +225,7 @@ const Contacts = () => {
           <Grid item lg={3.5} style={{ flex: "1" }}>
             <img
               src="https://t3.ftcdn.net/jpg/03/31/67/20/360_F_331672033_FxaxFTRS6kSWvPlNEk2DFgu6PIRikKOq.jpg"
-              style={{
-                width: "100%",
-                height: "99%",
-                objectFit: "cover",
-                marginTop: "3%",
-              }}
+              id="contact_image_left"
             />
           </Grid>
         </Grid>

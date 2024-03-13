@@ -10,7 +10,7 @@ import { InputAdornment, Modal, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import CouserOne from "../../Image/sqaicon.jpg";
 import { Button } from "@mui/material";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Cousertwo from "../../Image/scrumicon.webp";
 import CouserTwo from "../../Image/courseTwo.png";
 import CouserThree from "../../Image/courseThree.png";
@@ -72,17 +72,17 @@ const Courses = ({ selectedData, handleClick, model, modelClose }) => {
             <br></br>
             <br></br>
             <Grid item lg={3.5} xs={12}>
-              <h1>Courses</h1>
+              <h1 className="Courses_heading">All Courses</h1>
             </Grid>
           </Grid>
           <Container>
             <Grid
               container
               style={{ display: "flex", justifyContent: "center" }}
-              spacing={3}
+              gap={2}
               className="courses_images"
             >
-              {filterData.map((item) => {
+              {/* {filterData.map((item) => {
                 return (
                   <Grid
                     item
@@ -157,7 +157,6 @@ const Courses = ({ selectedData, handleClick, model, modelClose }) => {
                         xs={3.8}
                         className="slider_content"
                       >
-                        {/* <label>Beginner to Advance</label> */}
                         <Button
                           id="learn_now_btn"
                           onClick={() => handleClick(item)}
@@ -166,6 +165,79 @@ const Courses = ({ selectedData, handleClick, model, modelClose }) => {
                         </Button>
                       </Grid>
                     </Grid>
+                  </Grid>
+                );
+              })} */}
+              {filterData.map((item) => {
+                return (
+                  <Grid
+                    item
+                    lg={3.8}
+                    md={5}
+                    sm={5}
+                    xs={12}
+                    className="course_cards"
+                  >
+                    <img className="courses_image" src={item.imageRole} />
+                    <Grid container>
+                      <Grid item lg={3} md={3} sm={3} xs={3}>
+                        <img
+                          src={item.image}
+                          className="teacher_course_image"
+                        />
+                      </Grid>
+                      <Grid item lg={4} md={3} sm={3} xs={3}></Grid>
+                      <Grid
+                        item
+                        lg={5}
+                        md={6}
+                        sm={6}
+                        xs={6}
+                        style={{ color: " rgb(0, 134, 173)" }}
+                      >
+                        <Grid container className="slider_content_main">
+                          <Grid item lg={2.5} md={2} sm={2} xs={2}>
+                            {item.icon}
+                          </Grid>
+                          <Grid
+                            item
+                            lg={5}
+                            md={3}
+                            sm={5}
+                            xs={5}
+                            className="slider_content"
+                          >
+                            <label>
+                              <b> 2 Hour</b>
+                            </label>
+                          </Grid>
+                          <Grid item lg={1} md={1} sm={1} xs={1}>
+                            <SignalCellularAltIcon />
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                    <h4 className="teacher_name">{item.role}</h4>
+                    <div className="course_teacher" style={{ width: "100%" }}>
+                      <p>
+                        <b>
+                          <br></br>For {item.levelCourse}
+                          <br></br>
+                          By {item.name}
+                        </b>
+                      </p>
+                    </div>
+                    <div
+                      className="learn_btn_start"
+                      // onClick={() => navigate("/courses")}
+                    >
+                      <Button
+                        id="learn_now_btn"
+                        onClick={() => handleClick(item)}
+                      >
+                        Learn Now <ArrowForwardIcon />
+                      </Button>
+                    </div>
                   </Grid>
                 );
               })}

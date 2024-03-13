@@ -1,58 +1,76 @@
-
-.website_feature_main{
-    justify-content: center;
-    gap: 30px;
-    margin-top: -8%;
+.website_feature_main {
+  justify-content: center;
+  gap: 30px;
+  margin-top: -8%;
 }
-.service_main{
-      background-color: rgb(0,134,173);
-      display: flex;
-      justify-content: center;
-      margin-top: 9%;
+.service_main {
+  background-color: rgb(0, 134, 173);
+  display: flex;
+  justify-content: center;
+  margin-top: 9%;
 }
-.heading_services{
-    text-align:start;
-} 
-.course_image{
-  background-image: linear-gradient(to bottom left, rgba(0,134,173,0.5) 0%, rgba(0,134,173,1) 100%);
-margin-bottom: 6%;
-padding: 1%;
+.heading_services {
+  text-align: start;
 }
-#learn_now_btn{
-  background-color: white !important;
+.course_image {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(0, 134, 173, 0.5) 0%,
+    rgba(0, 134, 173, 1) 100%
+  );
+  margin-bottom: 6%;
+  padding: 1%;
+}
+#learn_now_btn {
+  background-color: rgb(0, 134, 173) !important;
   color: var(--color);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   font-weight: bold;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  text-align: start;
 }
-.course_teacher{
-  color: white !important;
+.learn_btn_start {
+  display: flex;
+  justify-content: start;
+}
+.course_teacher {
+  color: black !important;
   font-family: var(--fontFamily) !important;
-  padding-left: 4% !important;
-  padding-top: 6% !important;
   padding-bottom: 2% !important;
   margin: 0% !important;
+  text-align: start;
+  margin-top: -5% !important;
+}
+.teacher_name {
+  color: black;
+  text-align: start;
+  margin-top: 1.5rem;
+  font-family: var(--fontFamily);
 }
 .teacher_course_image {
-width: 8%;
-height: 7vh;
-border-radius: 50%;
-padding: 4%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 4%;
+  margin-top: 20%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.wesbsite_feature_child img{
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.wesbsite_feature_child img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.wesbsite_feature_child h4{
-    color:white !important;
-    font-family: var(--fontFamily);
-    font-weight: 600;
-  }
-.wesbsite_feature_child p{
+.wesbsite_feature_child h4 {
+  color: white !important;
+  font-family: var(--fontFamily);
+  font-weight: 600;
+}
+.wesbsite_feature_child p {
   color: white;
   text-align: start;
   padding-bottom: 5%;
@@ -60,121 +78,140 @@ padding: 4%;
   font-family: var(--fontFamily);
 }
 .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 10%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  .course_main{
-    padding: 2% 0%;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-  }
-  .course_main h3{
-    color: rgb(0,134,173);
-  }
-  .course_main p{
-    font-size: 18px;
-    color: black;
-    font: bolder;
-  }
-  
-  .veiw_course_btn{
-    background-color:rgb(0,134,174) !important;
-    color: white !important;
-    transition: 1s !important;
-  }
-  .veiw_course_btn:hover{
-background-color: rgb(26, 174, 219) !important;
-  }
-  
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10%;
+}
+
+.course_main {
+  padding: 2% 0%;
+}
+.course_main h3 {
+  color: rgb(0, 134, 173);
+}
+.course_main p {
+  font-size: 18px;
+  color: black;
+  font: bolder;
+}
+
+.veiw_course_btn {
+  background-color: rgb(0, 134, 174) !important;
+  color: white !important;
+  transition: 1s !important;
+}
+.veiw_course_btn:hover {
+  background-color: rgb(26, 174, 219) !important;
+}
+
 /* .style={{ backgroundColor: "rgb(230, 246, 250)" }} */
-.courses_bg_color{
-  background-image: url(https://bracketweb.com/eduactwp/wp-content/uploads/2023/09/footer-bg-1.png);
-  background-color: rgb(5, 73, 96);
+.courses_bg_color {
+  /* background-image: url(https://bracketweb.com/eduactwp/wp-content/uploads/2023/09/footer-bg-1.png);
+  background-color: rgb(5, 73, 96); */
+  background-color: rgb(211, 244, 242);
   background-repeat: no-repeat;
   background-size: cover;
   color: white !important;
 }
-  @media (max-width:550px){
-    .website_feature_main{
-      justify-content: center;
-      gap: 30px;
-      margin-top: 10%;
-  }
-  .wesbsite_feature_child h5{
-    color:white !important;
-    font-family: var(--fontFamily);
-  font-size: 24px I !important;
-  font-weight: 600;
-  }
-  }
-
-
-  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    content: 'next';
+.course_cards {
+  background-color: white;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 4% !important;
 }
-.slider_image{
+.courses_image {
+  width: 100%;
+  height: 25vh;
+  border-radius: 10px;
+}
+@media (max-width: 550px) {
+  .website_feature_main {
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10%;
+  }
+  .wesbsite_feature_child h5 {
+    color: white !important;
+    font-family: var(--fontFamily);
+    font-size: 24px I !important;
+    font-weight: 600;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+}
+.slider_image {
   text-align: start;
   font-family: var(--fontFamily);
   margin-top: -2.5% !important;
-  
 }
-.slider_image p{
+.slider_image p {
   margin: -1% 0%;
   padding-left: 1%;
   font-size: 16px;
 }
 
-.slider_image h5{
+.slider_image h5 {
   color: black;
   padding-left: 1%;
 }
-.slider_content_main{
-  background-color: var(--color);
-  margin: 2% 0%;
+.slider_content_main {
+  display: flex;
+  justify-content: end;
+  padding: 6% !important;
+  background-color: white;
+  color: var(--color) !important;
+  margin-top: 3rem;
   margin-bottom: 20%;
   padding: 1%;
   color: white;
   display: flex;
   align-items: center;
+  padding: 3% 0%;
+  border-radius: 4px;
 }
-.slider_content label
-{
+.slider_content label {
   font-size: 12px;
   font-family: var(--fontFamily);
 }
 
-@media (max-width:1050px) and (min-width:560px){
-  .slider_image p{
+@media (max-width: 1050px) and (min-width: 560px) {
+  .slider_image p {
     margin: 0% 0%;
     font-size: 16px;
-  }  
+  }
 }
 
-@media (max-width:550px){
-  .slider_image p{
+@media (max-width: 550px) {
+  .slider_image p {
     margin: 0.5% 0%;
     font-size: 16px;
-  }  
-  .veiw_course_btn{
+  }
+  .veiw_course_btn {
     margin-bottom: 5% !important;
+  }
+  .course_cards {
+    margin: 0% 2%;
   }
 }

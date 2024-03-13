@@ -33,7 +33,8 @@ export const objData = [
     CourseName: "Scrum Master",
   },
   {
-    imageRole: CouserOne,
+    imageRole:
+      "https://media.licdn.com/dms/image/D4D12AQGv-DPt8dOQEw/article-cover_image-shrink_720_1280/0/1689195252409?e=2147483647&v=beta&t=j7_AKpy0GbM5ATS3Juj3tBr7z3MfEsW-dd_YmYNt9K0",
     role: "Software Quality Assurance",
     levelCourse: "Beginner to Advance",
     name: "Jaffar Zahid",
